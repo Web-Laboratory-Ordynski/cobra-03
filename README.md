@@ -7,5 +7,5 @@
                     
 Имя | Никнейм | Почта
 ------------- | -------------  | -------------
-ЮЮЮЮ  | Content Cell | Content Cell (изменить)
-ЮЮЮЮ  | Content Cell | Content Cell (изменить)
+Batkalova Yulia  | lamoregrande | lamoregrande87@gmail.com
+@@@  | Content Cell | Content Cell (изменить)
