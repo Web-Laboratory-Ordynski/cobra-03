@@ -9,6 +9,6 @@
 ------------- | -------------  | -------------
 Batkalova Yulia  | lamoregrande | lamoregrande87@gmail.com
 Панасюк Михаил | MixalsWork | Mixals92@gmail.com
-@@@  | Content Cell | Content Cell (изменить)
+Світлана Кальмуцька  | SvitlanaKalmutska | svitlachok.k@gmail.com
 @@@  | Content Cell | Content Cell (изменить)
 
