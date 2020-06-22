@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_selectors</title>
+    <style>
+      ul {
+        width: 300px;
+        background: #7123a5;
+        color: white;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        padding: 10px;
+        border-bottom: 6px solid #e21b1b;
+        border-top: 6px solid #e21b1b;
+        font-size: 40px;
+      }
+
+      li:first-child {
+        border-top: none;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      ul li:only-child {
+        color: rgb(12, 12, 12);
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <pre>
+              <p><h1>First Child Pseudo-selector <u>:first-child</u></h1></p>
+              Select a first child element inside of another element
+              You can select the first child element.
+              A child element is any element that is directly nested in another element.
+              You can combine this pseudo-selector with other selectors.
+            </pre>
+        <pre>
+              <h1>Last Child Pseudo-selector <u>:last-child</u></h1>
+              Select the last element inside of another element
+              You can use this selector to select an element that is the last child element inside of another element.
+          </pre>
+      </article>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <ul>
+        <li>List Item</li>
+      </ul>
+    </section>
+
+    <section>
+      <article>
+        <pre>
+            <h1>Only Child Pseudo-selector <u>:only-child</u></h1>
+            Select an element that are the only element inside of another one.
+            You can select any element that is the only element inside of another one.
+          </pre>
+        <pre>
+          <h3>Pro Tip</h3> → In cases where there is only one element, that element counts as the first-child, only-child and last-child!
+        </pre>
+      </article>
+    </section>
+  </body>
+</html>
