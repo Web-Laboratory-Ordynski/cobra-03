@@ -9,3 +9,6 @@
 ------------- | -------------  | -------------
 Batkalova Yulia  | lamoregrande | lamoregrande87@gmail.com
 @@@  | Content Cell | Content Cell (изменить)
+@@@  | Content Cell | Content Cell (изменить)
+@@@  | Content Cell | Content Cell (изменить)
+
