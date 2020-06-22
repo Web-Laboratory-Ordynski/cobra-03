@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batkalova</title>
+    <style>
+     
+        img:only-of-type {
+         border: 10px solid red;
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+            }
+
+        span:first-of-type {
+             color: blue;
+             }
+
+        h4:first-of-type {
+             color: green; 
+             }
+
+    </style>
+
+</head>
+<body>
+
+
+    <h2>Псевдокласс :only-of-type</h2>
+    <div>Псевдокласс :only-of-type применяется к дочернему элементу указанного типа, только если он единственный у родителя.</div>
+    <h3>Пример:</h3>
+    <div>
+        &#60;style&#62; <br>
+            img:only-of-type { <br>
+             border: 10px solid red; <br>
+            } <br>
+            <br>
+            img{<br>
+                width: 100px;<br>
+                height: 100px;<br>
+            } <br>
+        	&#60;/style&#62;<br>
+    </div>
+    <p><img src="images/Vinnie.jpeg" alt="">
+        <img src="images/Vinnie.jpeg" alt=""></p>
+     <p><img src="images/Vinnie.jpeg" alt=""></p>
+
+
+    <h2>Псевдокласс :first-of-type</h2>
+    <div>Псевдокласс :first-of-type применяет заданный стиль к элементу, который является первым дочерним элементом определенного типа внутри родительского элемента. Отличие псевдокласса :first-of-type от :first-child заключается в том, что он выбирает первый дочерний элемент определенного типа, а не первый дочерний элемент этого типа.</div>
+    <h3>Пример:</h3>
+    <div> <br>
+        &#60;style&#62; <br>
+        span:first-of-type { <br>
+            color: blue; <br>
+            } <br>
+<br>
+       h4:first-of-type { <br>
+            color: green; <br>
+            } <br>
+            &#60;/style&#62; <br>
+            <br>
+    </div>
+    <span>Uno</span>
+    <h4>Один</h4>
+    <span>Dos</span>
+    <h4>Два</h4>
+    <span>Tres</span>
+    <h4>Три</h4>
+
+
+
+</body>
+</html>
