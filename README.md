@@ -8,7 +8,7 @@
 Имя | Никнейм | Почта
 ------------- | -------------  | -------------
 Batkalova Yulia  | lamoregrande | lamoregrande87@gmail.com
-@@@  | Content Cell | Content Cell (изменить)
+Панасюк Михаил | MixalsWork | Mixals92@gmail.com
 @@@  | Content Cell | Content Cell (изменить)
 @@@  | Content Cell | Content Cell (изменить)
 
