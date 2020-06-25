@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 289px;
+  text-align: center;
+  padding: 56px 70px 0px;
+  margin: 0px auto;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablet {
+  fill: white;
+  width: 22px;
+  height: 30px;
+}
+
+.settings {
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+
+.dashboard {
+  fill: white;
+  width: 27px;
+  height: 22px;
+}
+
+.tablet:hover,
+.settings:hover,
+.dashboard:hover {
+  fill: #2a69a6;
+}
+
+.icon {
+  padding-top: 18px;
+  background-color: #1275b9;
+  margin: auto;
+  border-radius: 50%;
+  width: 65px;
+  height: 63px;
+}
+
+.icon:hover {
+  border: solid 1px #2a69a6;
+  background-color: #ffffff;
+}
+
+.item-description {
+  width: 220px;
+  height: 52px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #9d9d9d;
+  margin: 0px;
+}
+
+.big_letter {
+  text-transform: uppercase;
+  font-family: "Mukta", sans-serif;
+}
