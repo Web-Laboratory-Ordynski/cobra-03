@@ -2,13 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svitlana Kalmutska</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Shopping List</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="header-title">
+      CSS Dinner Shopping List</h1>
+    <p><span>Let's go to the mall!</span></p>
 
+  </header>
+  <div class="container">
+
+    <ul class="list">
+      <li class="list-item">
+
+        <input type="checkbox" id="first" name="A lot of pickles (for the next lessons about CSS)" value="done">
+        <label for="first">A lot of pickles <span>(for the next lessons about CSS)</span></label>
+
+      </li>
+      <li class="list-item">
+        <input type="checkbox" id="second" name="10 apples (for more CSS manipulations)" value="done">
+        <label for="second">10 apples <span>(for more CSS manipulations)</span></label>
+
+      </li>
+      <li class="list-item">
+        <input type="checkbox" id="third" name="20 oranges (because they are awesome)" value="done">
+        <label for="third">20 oranges <span>(because they are awesome)</span></label>
+
+      </li>
+      <li class="list-item">
+        <input type="checkbox" id="fourth" name="13 plates (hm...they always disappear)" value="done">
+        <label for="fourth">13 plates <span>(hm...they always disappear)</span></label>
+
+      </li>
+      <li class="list-item">
+        <input type="checkbox" id="fifth" name="15 bentos" value="fifth">
+        <label for="fifth">15 bentos</label>
+
+      </li>
+      <li class="list-item">
+        <input type="checkbox" id="sixth" name="1 bottle of Sake ^_^ (for my friends) " value="done">
+        <label for="sixth">1 bottle of Sake ^_^ <span>(for my friends)</span></label>
+
+      </li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>Bon appetit :)</p>
+  </footer>
 </body>
 
 </html>
