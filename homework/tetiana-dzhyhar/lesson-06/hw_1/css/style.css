@@ -33,9 +33,9 @@
   height: 22px;
 }
 
-.tablet:hover,
-.settings:hover,
-.dashboard:hover {
+.icon:hover .tablet,
+.icon:hover .settings,
+.icon:hover .dashboard {
   fill: #2a69a6;
 }
 
