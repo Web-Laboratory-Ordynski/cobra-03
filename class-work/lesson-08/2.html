@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transform</title>
+    <link rel="stylesheet" href="./css/2.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="axis-X">
+        <div class="text">
+          вісь X
+        </div>
+      </div>
+      <div class="axis-Y">
+        <div class="text">
+          вісь Y
+        </div>
+      </div>
+      <div class="content">
+        <h2>Scale</h2>
+        <h3></h3>
+        <p>
+          scaleX(x) Масштабування елемента по горизонталі (вісь X).
+        </p>
+        <div>
+          <div style="transform: scaleX(1.5); background-color: green;">
+            style="transform: scaleX(1.5)"
+          </div>
+        </div>
+        <p>
+          scaleY(y) Масштабування елемента по вертикалі (вісь Y).
+        </p>
+        <div>
+          <div style="transform: scaleY(0.5); background-color: blue;">
+            style="transform: scaleY(0.5)"
+          </div>
+        </div>
+        <p>
+          scale(x,y) Масштабування елемента по горизонталі та по вертикалі.
+          Значення менше 1 - зменшує елемент, більше 1 - збільшує елемент.
+        </p>
+        <div>
+          <div
+            style="
+              transform: scale(-2, 1.5);
+              background-color: rgb(199, 67, 89);
+            "
+          >
+            style=" transform: scale(-2, 1.5);"
+          </div>
+        </div>
+        <p>
+          scaleZ(z) Маштабування елемента по ocs Z.
+        </p>
+        <div>
+          <div style="transform: scaleZ(2); background-color: grey;">
+            style="transform: scaleZ(2);"
+          </div>
+        </div>
+        <p>
+          scale3d(x,y,z) Масштабування елемента тривимірному просторі.
+        </p>
+        <div>
+          <div
+            style="transform: scale3d(2, 1.2, 10); background-color: violet;"
+          >
+            style="transform: scaleZ(2, 1.2, 10); "
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>
