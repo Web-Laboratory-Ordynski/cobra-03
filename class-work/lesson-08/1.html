@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+    <h3 class="bgcn" id="Sticky_positioning" name="Sticky_positioning">Липкое позиционирование</h3>
+    <p>Липкое позиционирование можно рассматривать как гибрид относительного и фиксированного позиционирования. Липкий позиционированный элемент обрабатывается как относительно позиционированный до тех пор, пока он не пересечет заданный порог, после чего он будет считаться фиксированным, пока не достигнет границы его родителя. Например...</p>
+    <pre class="code_p"><code class=" language-css"><span class="token selector"><span class="token id">#one</span></span> <span class="token punctuation">{</span> <span class="token property">position</span><span class="token punctuation">:</span> sticky<span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+    <p>... позиционирует элемент с id "one" относительно до тех пор, пока видовой экран не будет прокручен таким образом, чтобы элемент был меньше 10 пикселей от вершины. Помимо этого порога элемент будет зафиксирован на 10 пикселей сверху.</p>
+    <p>Общее использование для липкого позиционирования - для заголовков в алфавитном списке. Заголовок «B» появится чуть ниже элементов, начинающихся с «A», пока они не будут прокручиваться за кадром. Вместо того, чтобы скользить за кадром с остальной частью содержимого, заголовок «B» затем останется фиксированным в верхней части окна просмотра, пока все элементы «B» не будут прокручиваться на экране, и в этот момент он будет закрыт «C», заголовок и т. д.</p>
+    <p>Вы должны указать порог с по крайней мере одним из <span style="line-height: 1.5;"> <a href="/ru/docs/Web/CSS/top" title="CSS свойство top частично определяет вертикальную позицию позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. top не применится, если задано position: static)."><code>top</code></a>, <a href="/ru/docs/Web/CSS/right" title="CSS свойство right частично определяет горизонтальное положение позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. right не применится, если задано position: static)."><code>right</code></a>, <a href="/ru/docs/Web/CSS/bottom" title="CSS свойство bottom частично определяет вертикальную позицию позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. bottom не применится, если задано position: static)."><code>bottom</code></a>, или <a class="new" href="/ru/docs/Web/CSS/left" rel="nofollow" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!"><code>left</code></a></span> для того, чтобы липкое позиционирование могло вести себя так, как ожидалось. В противном случае он будет неотличим от относительного позиционирования.</p>
+    <h2>HTML</h2>
+    <div>
+        <dl>
+          <dt>A</dt>
+          <dd>Andrew W.K.</dd>
+          <dd>Apparat</dd>
+          <dd>Arcade Fire</dd>
+          <dd>At The Drive-In</dd>
+          <dd>Aziz Ansari</dd>
+        </dl>
+        <dl>
+          <dt>C</dt>
+          <dd>Chromeo</dd>
+          <dd>Common</dd>
+          <dd>Converge</dd>
+          <dd>Crystal Castles</dd>
+          <dd>Cursive</dd>
+        </dl>
+        <dl>
+          <dt>E</dt>
+          <dd>Explosions In The Sky</dd>
+        </dl>
+        <dl>
+          <dt>T</dt>
+          <dd>Ted Leo & The Pharmacists</dd>
+          <dd>T-Pain</dd>
+          <dd>Thrice</dd>
+          <dd>TV On The Radio</dd>
+          <dd>Two Gallants</dd>
+        </dl>
+      </div>
+
+      <h1 class="bgcn">translate()</h1>
+      <p>Сдвигает элемент относительно исходного расположения на заданное значение по горизонтали и вертикали.</p>
+      <h2 id="field_css_syntax" class="block_title">Синтаксис <button class="hint-ref"><i class="icon-help"></i></button></h2>
+      <code>transform: translate(tx);
+        transform: translate(tx, ty);</code>
+        <h2 id="field_css_value" class="block_title">Значения</h2>
+        <dl class="param2"><dt>tx</dt><dd>Сдвиг по горизонтали. Положительное значение сдвигает вправо, отрицательное влево.</dd><dt>ty</dt><dd>Сдвиг по вертикали. Положительное значение сдвигает вверх, отрицательное вниз. Если значение не указано, то по умолчанию принимается равным 0 и сдвига по вертикали не происходит.</dd></dl>
+        <p>В качестве значений принимаются любые единицы длины, принятые в CSS — например, пиксели (px), дюймы (in), пункты (pt) и др. Одно значение сдвигает элемент только по горизонтали, два значения сдвигают элемент по горизонтали и вертикали независимо. Значение 0 не меняет положение элемента.</p>
+        <img src="//webref.ru/example/image/meduza1.jpg" alt="">
+        <img src="//webref.ru/example/image/meduza2.jpg" alt="">
+        <img src="//webref.ru/example/image/meduza3.jpg" alt="">
+
+        <h2 class="bgcn">translateX()</h2>
+        <p>Сдвигает элемент относительно его исходного расположения на заданное значение по горизонтали.</p>
+        <h2 class="bgcn">translateY()</h2>
+        <p>Сдвигает элемент относительно его исходного расположения на заданное значение по вертикали.</p>
+        <h2 class="bgcn">translateZ()</h2>
+        <p>Сдвигает элемент относительно его исходного расположения на заданное значение по оси Z. Эффект будет заметен только при использовании перспективы, поворота элемента по осям X или Y.
+        </p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d"><h1 class="bgcn">transform: translate3d();</h1></a>
+
+</body>
+</html>
