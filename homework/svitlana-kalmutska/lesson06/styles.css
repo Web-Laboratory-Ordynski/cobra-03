@@ -1,0 +1,65 @@
+* {
+  transition: all .1s ease-in;
+}
+
+body {
+    background-color: #3b3f45;
+    width: 1190px;
+    height: 758px;
+    border: 25px solid #ffffff;
+    color: #f9f9f9;
+}
+
+.header {
+background-color: #4a4f56;
+height: 110px;
+width: 1190px;
+padding-top: 5px;
+padding-bottom: 5px;
+color: #eb7e7f;
+text-align: center;
+}
+
+  p span {
+    font: 20px Arial, sans-serif;    
+  }
+/* не виходить вирівняти бок div: зробити відступи вгорі і внизу */
+  .list-item {
+    background-color: #88839e;
+    height: 45x;
+    width: 804px;
+    text-align: left;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    margin-left: 185px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-style: solid none;
+    border-color: #88839e;
+  }
+  .list-item span {font-size: 20px;}
+
+  .list-item:hover {
+    background-color: #7a7593;
+    border-color: #ffffff;
+  }
+
+  * li {
+    list-style-type: none; /* Убираем маркеры */
+     }
+     /*Не виходить "оживити селектор input:checked" */
+  input:checked {
+    background-color: #625e77;
+    text-decoration: line-through;
+   }
+/* Не виходить вирівняти текст по центру футера */
+.footer {
+background-color: #4a4f56;
+margin-left: 220px;
+color: #eb7e7c;
+font: 22px Arial, sans-serif;
+text-align:center;
+width: 804px;
+height: 75px;
+}
