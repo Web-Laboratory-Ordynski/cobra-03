@@ -1,0 +1,134 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  /*width: 1193px;*/
+  height: 835px;
+  background-color: #3b3f45;
+  margin: 20px auto;
+  margin: 15px;
+}
+
+header {
+  background-color: #4a4f56;
+  text-align: center;
+  height: 116px;
+  color: #eb7e7f;
+  padding-top: 5px;
+}
+
+.list {
+  background-color: #88839e;
+  height: 384px;
+  width: 804px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  padding: 16px;
+  margin: 0px;
+  font-size: 1.75em;
+  color: white;
+}
+
+a:nth-child(odd) {
+  background-color: #7a7593;
+}
+
+footer {
+  margin-top: 42px;
+  background-color: #4a4f56;
+  width: 804px;
+  height: 74px;
+  color: #eb7e7f;
+  text-align: center;
+  margin: 40px auto;
+  padding-top: 5px;
+}
+
+section:hover {
+  transition: all 0.1s ease-in;
+  background-color: #625e77;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+  color: #b9c6d6;
+  /* cursor: pointer; */
+}
+
+a:active section {
+  background-color: #eb7e7f;
+}
+
+.less::before {
+  content: "(";
+}
+
+.less::after {
+  content: ")";
+}
+
+.less {
+  font-size: 0.75em;
+  color: #b9c6d6;
+}
+
+[type="checkbox"] {
+  width: 20px;
+  /*min-width: 20px;*/
+  height: 20px;
+  /*min-height: 20px;*/
+}
+
+/* input:checked::before {
+  content: "";
+  background-image: url("../checked.jpg");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+} */
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: white;
+}
+.custom-checkbox:checked + label::before {
+  border-color: white;
+  background-color: white;
+  background-image: url("../checked.svg");
+}
