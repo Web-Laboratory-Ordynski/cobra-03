@@ -1,0 +1,63 @@
+* {
+    background-color: #ffffff;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    border: 1px solid#2a69a6;
+    background-color: #2a69a6;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    padding: 17px;
+}
+
+.icon:hover {
+    background-color: #fff;
+
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.lorem {
+    width: 220px;
+    height: 52px;
+    color: #9D9D9D;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dash {
+    background-image: url('../images/Dashboard.svg');
+}
+
+.dash:hover {
+    background-image: url('../images/DashboardActive.svg');
+}
+
+.settings {
+    background-image: url('../images/Settings.svg');
+}
+
+.settings:hover {
+    background-image: url('../images/SettingsActive.svg');
+}
+
+.tablet {
+    background-image: url('../images/Tablet.svg');
+}
+
+.tablet:hover {
+    background-image: url('../images/TabletActive.svg');
+}
