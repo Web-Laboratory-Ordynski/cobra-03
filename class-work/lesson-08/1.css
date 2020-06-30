@@ -1,0 +1,62 @@
+#Sticky_positioning{
+    letter-spacing: -.00278rem;
+-webkit-font-smoothing: antialiased;
+border: 0;
+margin: 20px 0;
+font-size: 1.44444rem;
+font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+color: #fff;
+font-weight: 400;
+line-height: 1.25;
+-webkit-box-decoration-break: clone;
+display: inline-block;
+padding: 0 4px 0 20px;
+}
+.code_p{
+    background-color: gray;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  dl {
+    margin: 0;
+    padding: 24px 0 0 0;
+  }
+  .bgcn{
+      background-color: yellow;
+      color: black !important;
+      font-size: 30px !important;
+      font-weight: 700 !important;
+  }
+  dt {
+    background: #B8C1C8;
+    border-bottom: 1px solid #989EA4;
+    border-top: 1px solid #717D85;
+    color: #FFF;
+    font: bold 18px/40px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 24px 0 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+  }
+  
+  dd {
+    font: bold 20px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+  }
+  
+  dd + dd {
+    border-top: 1px solid #CCC;
+  }
+
+  img {
+    transition: 0.5s;
+    }
+    img:hover {
+     transform: translate(5px, 10px); /* Сдвигаем вправо и вниз */
+    }
+   
