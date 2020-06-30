@@ -3,7 +3,6 @@
 }
 
 .container {
-  /*width: 1193px;*/
   height: 835px;
   background-color: #3b3f45;
   margin: 20px auto;
@@ -62,10 +61,14 @@ a {
   text-decoration: none;
 }
 
-input:checked + span {
+input:checked~label {
   text-decoration: line-through;
   color: #b9c6d6;
-  /* cursor: pointer; */
+}
+
+input:checked~span {
+  text-decoration: line-through;
+  color: #b9c6d6;
 }
 
 a:active section {
@@ -73,7 +76,7 @@ a:active section {
 }
 
 .less::before {
-  content: "(";
+  content: " (";
 }
 
 .less::after {
