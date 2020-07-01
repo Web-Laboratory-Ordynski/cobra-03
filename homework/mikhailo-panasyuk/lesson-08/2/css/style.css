@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1171px;
+    margin: auto;
+}
+.main__title{
+    font-size: 56px;
+    color: #3C3C3C;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+span{
+    width: 45px;
+    height: 5px;
+    background-color: #DDDBDB;
+    margin-bottom: 40px;
+}
+.main__descr{
+    font-size: 16px;
+    color: #3C3C3C;
+    font-family: 'Lato', sans-serif;
+    max-width: 561px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main__content{
+    display: flex;
+}
+.content__item{
+    margin-right: 30px;
+}
+.content__item:last-child{
+    margin-right: 0;
+}
+.content__foto{
+    width: 270px;
+    height: 269px;
+    margin-bottom: 21px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+.content__item:first-child:hover .content__foto{
+    background-color: green;
+    transform: translate(120px, 50%);
+}
+.content__item:nth-child(2) .content__foto{
+    background-image: url(../img/1.png);
+}
+.content__item:nth-child(2) .content__foto:hover{
+    transform: rotate(45deg);
+}
+.content__item:nth-child(3) .content__foto{
+    background-image: url(../img/2.png);
+}
+.content__item:nth-child(3) .content__foto:hover{
+    transform: scale(1.3);
+}
+.content__item:nth-child(4) .content__foto{
+    background-image: url(../img/3.png);
+}
+.content__item:nth-child(4) .content__foto:hover{
+    transform: skew(.312rad);
+}
+.blue{
+    background-color: #00AED9;
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue i {
+    width: 43px;
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+    margin-right: 3px;
+}
+.content__icon:last-child i{
+    margin-right: 0;
+}
+.text__title{
+    color: #282528;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.text__subtitle{
+    font-weight: 300;
+    font-size: 16px;
+}
