@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #2B81AC;
+    
+    
+}
+.wrapper{
+    margin: 20px 20px;
+    background-color: #3399CC;
+}
+.container{
+    max-width: 60%;
+    margin: auto;
+}
+.header h1{
+    margin: 0;
+    padding: 30px 0;
+    color: white;
+}
+.content ol{
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    border: 5px solid white;
+    transition: all ease 0.2s;
+}
+.content li{
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 25px 0 ;
+}
+.content li span{
+    display: block;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+.content li i{
+    padding-left:5px;
+    font-size: 26px;
+}
+.li__item__1{
+    width: 50%;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: #3399CC;
+}
+.li__item__2{
+    width: 25%;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: #33CCCC;
+}
+.li__item__3{
+    width: 25%;
+    border-bottom: 5px solid white;
+    background-color: #996699;
+}
+.li__item__4{
+    width: 25%;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: #C24747;
+}
+.li__item__5{
+    width: 25%;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: #E2674A;
+}
+.li__item__6{
+    width: 25%;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: #FFCC66;
+}
+.li__item__7{
+    width: 25%;
+    border-bottom: 5px solid white;
+    background-color: #99CC99;
+}
+.li__item__8{
+    width: 25%;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    background-color: #669999;
+}
+.li__item__9{
+    width: 50%;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    background-color: #CC6699;
+}
+.li__item__10{
+    width: 25%;
+    border-bottom: 5px solid white;
+    background-color: #339966;
+}
+.li__item__11{
+    width: 100%;
+    background-color: #666699;
+}
+.footer__title{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    font-size: 22px;
+}
+.content ol:hover{
+    cursor: pointer;
+    filter: brightness(115%);
+}
+.content ol li:hover{
+    filter: brightness(85%);
+}

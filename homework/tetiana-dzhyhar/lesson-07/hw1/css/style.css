@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.main_block {
+  width: 1280px;
+  height: 976px;
+  margin: 0 auto;
+  padding-top: 143px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin: 0px 374px;
+  width: 554px;
+  margin-bottom: 108px;
+}
+
+.who-we-are {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: 4.8px;
+  text-align: center;
+  color: #898f99;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.Hello-Namaste {
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 0.63;
+  letter-spacing: 4.8px;
+  text-align: right;
+  color: #0ec8cb;
+  padding-top: 35px;
+  padding-bottom: 44px;
+  margin: 0;
+}
+
+.kredo {
+  font-family: PTSans;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #999999;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.little_block {
+  width: 236px;
+  height: 420px;
+  border: solid 1px #ececec;
+  background-color: #f7f7f7;
+  padding: 55px 32px 94px 30px;
+}
+
+article {
+  width: 174px;
+  height: 101px;
+  font-family: PTSans;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #777777;
+  padding-top: 33px;
+  text-align: center;
+}
+
+article:nth-of-type(2) {
+  padding-top: 31px;
+}
+
+.anchor,
+.diamond,
+.eyeglasses,
+.monitor {
+  fill: black;
+  width: 66px;
+  height: 66px;
+}
+
+
+
+.web-design,
+.graphics,
+.illustrations {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #1b1b1b;
+  margin: 64px auto 0px;
+}
+
+.web-development {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #1b1b1b;
+  margin: 42px auto 0px;
+}
+
+.little_block:hover {
+  background-color: #0ec8cb;
+  transition: all .1s ease-in;
+}
+
+.little_block:hover * {
+  color: white;
+}
+
+.little_block:hover .anchor,
+.little_block:hover .diamond,
+.little_block:hover .eyeglasses,
+.little_block:hover .monitor {
+  fill: white;
+}
