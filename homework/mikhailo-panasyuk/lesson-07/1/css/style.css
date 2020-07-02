@@ -79,6 +79,14 @@
     border: 1px solid #0EC8CB;
     color: white;
 }
+.content__item:hover .content__title{
+
+    color: white;
+}
+.content__item:hover .content__descr{
+
+    color: white;
+}
 .content__item:hover img{
     filter: invert(100%);
 }
