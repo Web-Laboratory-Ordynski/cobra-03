@@ -31,7 +31,9 @@
     margin: auto;
     font-family: 'PT Sans', sans-serif;
 }
-
+.content{
+    padding-bottom: 160px;
+}
 .content__conteiner{
     display: flex;
     background-color: #F7F7F7;
