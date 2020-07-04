@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/fonts/Proxima Nova Regular.otf");
+}
+
 header {
   position: absolute;
   right: 0;
@@ -15,7 +20,7 @@ main {
   width: 88.33%;
   left: 5.83%;
   top: 150px;
-  background-color: blue;
+  background-color: #ffffff;
 }
 
 span {
@@ -89,12 +94,7 @@ span {
 }
 
 .content {
-  /* position: relative; */
   width: 94%;
-  /* background-color: #da4c4c; */
-  /* top: 249px;
-  left: 70px; */
-  /* z-index: 0; */
   background-color: #ffffff;
 }
 
@@ -107,7 +107,6 @@ span {
   padding-left: 67px;
   border-left: 1px solid #b4b4b4;
   margin-left: 67px;
-  /* background-color: aqua; */
   background-color: #ffffff;
 }
 
@@ -143,11 +142,7 @@ span {
   padding-right: 50px;
   font-family: Georgia;
   font-size: 27px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: justify;
   color: #000000;
 }
