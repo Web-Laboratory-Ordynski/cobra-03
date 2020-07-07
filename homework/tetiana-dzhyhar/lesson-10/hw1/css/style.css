@@ -1,5 +1,11 @@
 @font-face {
   font-family: "Raleway";
+  src: url("/fonts/Raleway-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Raleway";
   src: url("/fonts/Raleway-Bold.ttf");
   font-weight: 700;
 }
@@ -10,21 +16,11 @@
   font-weight: 300;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-Black.ttf");
-  font-weight: 900;
-}
-
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap'); */
 
 * {
   box-sizing: border-box;
 }
-
-/* html {
-  background-color: #ff6033;
-} */
 
 .first-container {
   max-height: 1087px;
@@ -69,7 +65,7 @@ nav {
 .description__title {
   font-family: Raleway;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 0.8;
   text-align: left;
   color: #262626;
@@ -99,7 +95,7 @@ nav {
 }
 
 .button__text {
-  width: 150px;
+  width: 120px;
   height: 15px;
   margin: auto;
   position: absolute;
