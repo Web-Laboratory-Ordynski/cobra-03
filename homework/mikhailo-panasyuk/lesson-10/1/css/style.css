@@ -28,13 +28,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 68px;
 }
 .container{
     max-width: 1171px;
     margin: auto;
 }
 .header{
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,16 +106,13 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);}
 .content__btn:hover{
     box-shadow: 0 0 10px rgba(0,0,0,1);
-
 }
 .main__icon{
-    padding-bottom: 68px;
     text-align: center;
     cursor: pointer;
 }
 .about{
     background-color: #00C4C4;
-    padding: 70px 0px;
 }
 .about__container{
     display: flex;
