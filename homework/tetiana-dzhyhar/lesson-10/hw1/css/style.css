@@ -36,8 +36,7 @@
   padding-bottom: 160px;
 }
 
-.first-container__nav,
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -45,6 +44,9 @@ nav {
 
 .nav__item {
   margin-right: 30px;
+}
+
+.item_menu {
   font-family: Raleway;
   font-size: 16px;
   font-weight: bold;
@@ -53,7 +55,7 @@ nav {
   color: #262626;
 }
 
-.nav__item--apperlined {
+.item_menu--apperlined {
   border-top: 3px solid #ff6033;
   margin-top: -3px;
 }
@@ -74,10 +76,10 @@ nav {
 .description__container-text {
   padding-top: 34px;
   padding-bottom: 31px;
+  width: 385px;
 }
 
-.description__text {
-  width: 385px;
+.text-description {
   font-family: Raleway;
   font-size: 17px;
   font-weight: 300;
@@ -94,7 +96,7 @@ nav {
   background-color: #ff6033;
 }
 
-.button__text {
+.description__button-text {
   width: 120px;
   height: 15px;
   margin: auto;
@@ -111,7 +113,6 @@ nav {
 }
 
 .first-container__icon {
-  /* margin-bottom: 250px; */
   width: 24px;
   height: 40px;
   margin: 0px auto;
@@ -120,35 +121,49 @@ nav {
 .second-container {
   max-height: 700px;
   margin-top: -78px;
-  padding: 71px 120px 70px 0px;
+  padding: 80px 120px 70px 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: radial-gradient(circle at 0 0, #00c4c4, #00b7b7, #00adad, #009c9c), linear-gradient(to bottom, #00c4c4, #00c4c4);
+  background-image: radial-gradient(
+      circle at 0 0,
+      #00c4c4,
+      #00b7b7,
+      #00adad,
+      #009c9c
+    ),
+    linear-gradient(to bottom, #00c4c4, #00c4c4);
 }
 
 .second-container__description {
   max-width: 499px;
+  margin-top: 110px;
 }
 
-.second-container__title {
-  margin-top: 80px;
-  height: 67px;
-  font-family: Raleway;
-  font-size: 60px;
+.description__title--second_container {
+  font-size: 90px;
   font-weight: bold;
-  /* line-height: 0.8; */
-  text-align: left;
   color: #ffffff;
 }
 
-.second-container__text {
-  height: 166px;
+/* .second-container__title {
   font-family: Raleway;
-  margin-top: 24px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.59;
+  
+  line-height: 0.8;
   text-align: left;
+  
+} */
+
+.second-container__text {
+  /* font-family: Raleway; */
+  margin-top: 24px;
+
+  /* font-weight: 300; */
+  /* line-height: 1.59;
+  text-align: left; */
+}
+
+.text-description--second_container {
+  font-size: 16px;
   color: #ffffff;
 }
