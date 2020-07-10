@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(/fonts/Raleway-Light.woff2) format('woff2'),
+        url(/fonts/Raleway-Light.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(/fonts/Raleway-Bold.woff2) format('woff2'),
+        url(/fonts/Raleway-Bold.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url(/fonts/Raleway-Black.woff2) format('woff2'),
+        url(/fonts/Raleway-Black.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1500px;
+}
+
+.header {
+    background-image: url(/images/bg.jpg);
+    height: 1087px;
+    max-width: 1500px;
+}
+
+/* I made one more div (header__container) because I desided not to write margin in block .header as it could be used in future like separate block. And I also can't write margins in .container, because in that case I have problems with my backgroun images (our header should be 1500 px max-width because we have such bg-img) */
+.header__container {
+    margin-left: 165px;
+    margin-right: 164px;
+}
+
+.header__top {}
+
+.header__top-inner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 127px;
+    height: 52px;
+}
+
+.logo__img {}
+
+.menu {}
+
+.menu__list {}
+
+.menu__list-item {
+    display: inline-block;
+    padding-top: 19px;
+    padding-left: 25px;
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #262626;
+}
+
+.menu__link--active {}
+
+/* Can't understand what should I do with modificaror */
+
+.header__content {
+    color: #262626;
+}
+
+.header__content-inner {
+    padding-top: 170px;
+}
+
+.header__content-title {
+    font-family: 'Raleway-Black';
+    font-size: 60px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.42;
+    letter-spacing: normal;
+}
+
+.header__content-description {
+    width: 368px;
+    height: 70px;
+    font-family: 'Raleway-Light';
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.59;
+    margin-top: -20px;
+}
+
+.header__content-button {
+    width: 200px;
+    height: 55px;
+    background-color: #ff6033;
+    margin-top: 31px;
+    padding-top: 18px;
+    text-align: center;
+    font-family: 'Raleway-Light';
+    color: #ffffff;
+    letter-spacing: 2.2px;
+}
+
+.header__content-decor {}
+
+.header__content-icon {
+    padding-left: 581px;
+    padding-top: 310px;
+}
+
+.about {}
+
+.about__inner {
+    height: 700px;
+    max-width: 1500px;
+    margin-top: -87px;
+    background-color: #00b7b7;
+}
+
+.about__inner-container {
+    margin-left: 125px;
+    margin-right: 164px;
+    position: relative;
+}
+
+.about__img {
+    padding-left: 11px;
+    padding-top: 71px;
+}
+
+.about__img img {
+    width: 566px;
+    height: 559px;
+}
+
+.content {
+    max-width: 1500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.content__container {
+    width: 50%;
+    margin-left: auto;
+    padding-left: 94px;
+    padding-top: 155px;
+    color: #ffffff;
+}
+
+.title {}
+
+/* This block is empty because it will have the same filling us .content__title, I think so :) */
+
+.content__title {
+    font-family: 'Raleway-Bold';
+    font-size: 90px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.3;
+    letter-spacing: normal;
+}
+
+.content__text {
+    font-family: 'Raleway-Light';
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+}
