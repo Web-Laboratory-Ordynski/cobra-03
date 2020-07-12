@@ -16,8 +16,6 @@
   font-weight: 300;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap'); */
-
 * {
   box-sizing: border-box;
 }
@@ -146,21 +144,8 @@
   color: #ffffff;
 }
 
-/* .second-container__title {
-  font-family: Raleway;
-  
-  line-height: 0.8;
-  text-align: left;
-  
-} */
-
 .second-container__text {
-  /* font-family: Raleway; */
   margin-top: 24px;
-
-  /* font-weight: 300; */
-  /* line-height: 1.59;
-  text-align: left; */
 }
 
 .text-description--second_container {
