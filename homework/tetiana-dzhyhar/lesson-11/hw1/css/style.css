@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.coffee__container {
+  position: absolute;
+  left: 4.5%;
+  width: 91%;
+  height: 575px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: rgb(230, 181, 23); */
+
+}
+
+.coffee {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-image: url(/img/Layer.png);
+}
+
+.coffee__card {
+  width: 30%;
+  height: 441px;
+  border-radius: 1%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.coffee__card--central {
+  height: 500px;
+}
+
+.coffee__smoke {
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.coffee__cup {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.coffee__bean {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.coffee__smoke--central {
+  margin-top: 80px;
+}
+
+.coffee__cup--central {
+  margin-bottom: 80px;
+}
