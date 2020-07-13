@@ -106,14 +106,14 @@
 }
 
 .design__loading {
-  width: 230px;
+  width: 220px;
   margin: 0 auto;
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: stretch;
-  flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .article__date--loading {
-  margin: 1px;
+  padding-top: 10px;
 }
