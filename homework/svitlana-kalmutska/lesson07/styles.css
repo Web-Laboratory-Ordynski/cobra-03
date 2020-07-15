@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+*{
+    transition: all .1s ease-in;
+}
+
+/* Чому у body ширина 1544, звідки це взялось. Він не має падингів ніби */
+.body {
+    max-width: 1280px;
+    height: 976px;
+    background-color: #ffffff;
+   
+}
+
+.container {
+    max-width: 940px;
+    max-height: 976px;
+    margin: 0 auto;
+    padding-top: 143px;
+    background-color: #ffe5e5;
+    text-align: center;
+    
+}
+
+.header {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #ffe5e5;
+    text-align: center;
+    margin-bottom: 108px;
+}
+/* висота хедера після додавання усього контенту збільшилась на 51px, не розумію, де це відбулося */
+
+
+.we {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: 4.8px;
+    text-align: right;
+    color: #958089;
+    margin-right: 445px;
+}
+
+
+.we_judge {   
+    color: #b59b9b;
+    font-size: 18px;
+    width: 513px;
+    background-position: center;
+    text-align: center;
+    margin-left: 213px;
+}
+
+
+.h1 {
+    color: #27b4b6;
+    width: 532px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.63;
+    letter-spacing: 4.8px;
+    text-align: center;
+    margin-left: 204px;
+}
+
+.block {
+    display: inline-block;
+    width: 236px;
+    height: 420px;
+    border: solid 1px #958089;
+    background-color: #ffe5e5;
+    padding: 55px 32px 94px 30px;
+}
+/* мої блоки не помістились в рядок і я не второпаю, як задати потрібні параметри, і де */
+
+.block:hover {
+    background-color: #27b4b6;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+}
+
+.anchor
+.diamond
+.glasses
+.monitor {
+    width: 66px;
+    height: 66px;
+}
+
+.menu__link {
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+article {
+    width: 174px;
+    height: 101px;
+    font-family: PTSans;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #856b6b;
+    padding-top: 33px;
+    text-align: center;
+  }

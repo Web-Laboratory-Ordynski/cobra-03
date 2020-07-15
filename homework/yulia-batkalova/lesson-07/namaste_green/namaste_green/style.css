@@ -1,0 +1,88 @@
+*{
+text-align: center;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.header{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h1{
+    color: #11C8CB;
+}
+
+h4{
+padding-top: 143px;
+color: gray;
+}
+
+h2{
+    color: gray;
+}
+
+.icon {
+    width: 65px;
+    height: 67px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 17px;
+    background-repeat: no-repeat;
+}
+
+.block_Anchor, .block_Diamond, .block_Eyeglasses, .block_Monitor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block_Anchor:hover,.block_Diamond:hover,.block_Eyeglasses:hover,.block_Monitor:hover{
+    color: #ffffff;
+    background-color: #11C8CB;
+}
+
+.Anchor{
+    background-image: url(../images/Anchor.svg);
+}
+
+.Anchor:hover{
+    background-image: url(../images/AnchorActive.svg);
+}
+
+.Diamond{
+    background-image: url(../images/Diamond.svg);
+}
+
+.Diamond:hover{
+    background-image: url(../images/DiamondActive.svg);
+}
+
+.Eyeglasses{
+    background-image: url(../images/Eyeglasses.svg);
+}
+
+.Eyeglasses:hover{
+    background-image: url(../images/EyeglassesActive.svg);
+}
+
+.Monitor{
+    background-image: url(../images/Monitor.svg);
+}
+
+.Monitor:hover{
+    background-image: url(../images/MonitorActive.svg);
+}
+
+.text{
+    color: gray;
+}
+
+.text:hover{
+    color: #ffffff;
+}

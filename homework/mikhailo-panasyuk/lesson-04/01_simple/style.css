@@ -1,0 +1,30 @@
+
+header{
+    background-color: #A52A2A;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+small{
+    font-size: 18px;
+    color: blue;
+}
+.main__foto{
+    width: 100%;
+}
+p{
+    font-size: 18px;
+}
+.foto__wrapper{
+    text-align: center;
+}
+.foto__wrapper img{
+    border: 4px black dashed;
+}
+footer{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
