@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-top{
+    max-width: 1503px;
+    margin: auto;
+    padding: 80px 100px;
+}
+.container-bot{
+    max-width: 1700px;
+    margin: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "foto";
+  }
+  
+  .foto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.3fr;
+    gap: 52px 0px;
+    grid-template-areas: "foto__top" "foto__bot";
+    grid-area: foto;
+  }
+  
+  .foto__bot {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 55px;
+    grid-template-areas: "foto__bot-left foto__bot-right";
+    grid-area: foto__bot;
+  }
+  
+  .foto__bot-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 56px;
+    grid-template-areas: "foto__bot-left-left foto__bot-left-right";
+    grid-area: foto__bot-left;
+  }
+  
+  .foto__bot-left-left { grid-area: foto__bot-left-left; }
+  
+  .foto__bot-left-right { grid-area: foto__bot-left-right; }
+  
+  .foto__bot-right { grid-area: foto__bot-right; }
+  
+  .foto__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 55px;
+    grid-template-areas: "foto__top-left foto__top-right";
+    grid-area: foto__top;
+  }
+  
+  .foto__top-left { grid-area: foto__top-left; }
+  
+  .foto__top-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 56px 0px;
+    grid-template-areas: "foto__top-right-top" "foto__top-right-bot";
+    grid-area: foto__top-right;
+  }
+  
+  .foto__top-right-top { grid-area: foto__top-right-top; }
+  
+  .foto__top-right-bot { grid-area: foto__top-right-bot; }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "gallery-1 gallery-2 gallery-3 gallery-4" "gallery-5 gallery-6 gallery-7 gallery-8";
+  }
+  
+  .gallery-1 { grid-area: gallery-1; }
+  
+  .gallery-2 { grid-area: gallery-2; }
+  
+  .gallery-3 { grid-area: gallery-3; }
+  
+  .gallery-4 { grid-area: gallery-4; }
+  
+  .gallery-5 { grid-area: gallery-5; }
+  
+  .gallery-6 { grid-area: gallery-6; }
+  
+  .gallery-7 { grid-area: gallery-7; }
+  
+  .gallery-8 { grid-area: gallery-8; }
+  HTML
+  img{
+      max-width: 100%;
+      min-height: 100%;
+  }
