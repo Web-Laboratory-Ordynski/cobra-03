@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'ProximaNovaCond-Extrabld';
+    src: url(fonts/ProximaNovaCond-Extrabld.woff2) format('woff2'),
+        url(/fonts/ProximaNovaCond-Extrabld.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNovaCond-Semibold';
+    src: url(/fonts/ProximaNovaCond-Semibold.woff2) format('woff2'),
+        url(/fonts/ProximaNovaCond-Semibold.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+.wreper {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.container {
+    background-color: #e2e7ec;
+    max-width: 1600px;
+    min-height: 1400px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1120px;
+    padding-top: 91px;
+    padding-left: 240px;
+}
+
+.content__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.content__main-box {
+    width: 66%;
+    height: 540px;
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(/images/cars_main.jpg);
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* I still can't find the correct gradient parameter for this image but I will in future )*/
+
+.main-box__data {
+    font-family: 'ProximaNovaCond-Semibold';
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: 0.33px;
+    text-align: left;
+    color: #ffffff;
+    opacity: 0.5;
+    padding-left: 43px;
+}
+
+.main-box__text {
+    font-family: 'ProximaNovaCond-Extrabld';
+    font-size: 30px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 43px;
+    padding-bottom: 40px;
+    padding-right: 160px;
+}
+
+.box {
+    flex: 0 1 30%;
+    height: 540px;
+}
+
+.content__box {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.box__img {
+    width: 360px;
+    height: 251px;
+}
+
+.picture {
+    max-width: 100%;
+}
+
+.box__data {
+    font-family: 'ProximaNovaCond-Semibold';
+    color: #898989;
+    padding-left: 27px;
+    padding-top: 27px;
+}
+
+.box__text {
+    font-family: 'ProximaNovaCond-Extrabld';
+    color: #1d1d1d;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 0.55px;
+    text-align: left;
+    flex: 1 1 auto;
+    padding-left: 27px;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
+.box__icon {
+    padding-left: 27px;
+    padding-bottom: 20px;
+}
+
+.bottom {
+    padding-top: 87px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom__icon {
+    padding-left: 670px;
+}
+
+.bottom__text {
+    font-family: 'ProximaNovaCond-Semibold';
+    font-size: 13px;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #99a5b0;
+    padding-right: 698px;
+}
