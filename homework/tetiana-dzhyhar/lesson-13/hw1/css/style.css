@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hipster {
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.hipster__with-borders {
+  width: 100vw;
+  padding: 4.2vw;
+  display: grid;
+  grid-template-columns: 30vw 27.17vw 27.17vw;
+  grid-template-rows: 20vw 20vw 35vw;
+  grid-gap: 3.33vw;
+  grid-template-areas:
+    "wb_pic1 wb_pic1 wb_pic2"
+    "wb_pic1 wb_pic1 wb_pic3"
+    "wb_pic4 wb_pic5 wb_pic6";
+}
+
+.wb_pic1 {
+  background-image: url(/img/wb_pic1.jpg);
+  background-size: cover;
+  grid-area: wb_pic1;
+}
+
+.wb_pic2 {
+  background-image: url(/img/wb_pic2.jpg);
+  background-size: cover;
+  grid-area: wb_pic2;
+}
+
+.wb_pic3 {
+  background-image: url(/img/wb_pic3.jpg);
+  background-size: cover;
+  grid-area: wb_pic3;
+}
+
+.wb_pic4 {
+  background-image: url(/img/wb_pic4.jpg);
+  background-size: cover;
+  grid-area: wb_pic4;
+}
+
+.wb_pic5 {
+  background-image: url(/img/wb_pic5.jpg);
+  background-size: cover;
+  grid-area: wb_pic5;
+}
+
+.wb_pic6 {
+  background-image: url(/img/wb_pic6.jpg);
+  background-size: cover;
+  grid-area: wb_pic6;
+}
+
+.hipster__without-borders {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas:
+    "pic1 pic2 pic3 pic4"
+    "pic5 pic6 pic7 pic8";
+}
+
+/* .hipster__black-ground {
+  position: absolute;
+  background-image: url(/img/BG.png);
+  background-size: cover;
+  z-index: 2;
+  opacity: 0.5;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+} */
+
+.pic1 {
+  background-image: url(/img/pic1.jpg);
+  background-size: cover;
+  grid-area: pic1;
+}
+
+.pic2 {
+  background-image: url(/img/pic2.png);
+  background-size: cover;
+  grid-area: pic2;
+}
+
+.pic3 {
+  background-image: url(/img/pic3.jpg);
+  background-size: cover;
+  grid-area: pic3;
+}
+
+.pic4 {
+  background-image: url(/img/pic4.jpg);
+  background-size: cover;
+  grid-area: pic4;
+}
+
+.pic5 {
+  background-image: url(/img/pic5.jpg);
+  background-size: cover;
+  grid-area: pic5;
+}
+
+.pic6 {
+  background-image: url(/img/pic6.jpg);
+  background-size: cover;
+  grid-area: pic6;
+}
+
+.pic7 {
+  background-image: url(/img/pic7.jpg);
+  background-size: cover;
+  grid-area: pic7;
+}
+
+.pic8 {
+  background-image: url(/img/pic8.jpg);
+  background-size: cover;
+  grid-area: pic8;
+}
