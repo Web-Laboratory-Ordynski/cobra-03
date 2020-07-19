@@ -97,3 +97,8 @@
   grid-area: pic8;
   opacity: 0.3;
 }
+
+.hipster__without-borders>div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
