@@ -100,5 +100,6 @@
 
 .hipster__without-borders>div:hover {
   opacity: 1;
+  transition: all 0.5s;
   cursor: pointer;
 }
