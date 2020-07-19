@@ -4,122 +4,96 @@
 }
 
 .hipster {
-  width: 100vw;
+  width: 100%;
   background-color: #ffffff;
 }
 
 .hipster__with-borders {
-  width: 100vw;
-  padding: 5.3vw;
+  padding: 5vw;
   display: grid;
-  grid-template-columns: 28.17vw 27.17vw 27.17vw;
-  grid-template-rows: 20vw 20vw 35vw;
-  grid-gap: 3.3vw;
+  grid-gap: 3vw;
   grid-template-areas:
     "wb_pic1 wb_pic1 wb_pic2"
     "wb_pic1 wb_pic1 wb_pic3"
     "wb_pic4 wb_pic5 wb_pic6";
 }
 
-.wb_pic1 {
-  background-image: url(/img/wb_pic1.jpg);
-  background-size: cover;
+.hipster__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hipster-item-wb--1 {
   grid-area: wb_pic1;
 }
 
-.wb_pic2 {
-  background-image: url(/img/wb_pic2.jpg);
-  background-size: cover;
+.hipster-item-wb--2 {
   grid-area: wb_pic2;
 }
 
-.wb_pic3 {
-  background-image: url(/img/wb_pic3.jpg);
-  background-size: cover;
+.hipster-item-wb--3 {
   grid-area: wb_pic3;
 }
 
-.wb_pic4 {
-  background-image: url(/img/wb_pic4.jpg);
-  background-size: cover;
+.hipster-item-wb--4 {
   grid-area: wb_pic4;
 }
 
-.wb_pic5 {
-  background-image: url(/img/wb_pic5.jpg);
-  background-size: cover;
+.hipster-item-wb--5 {
   grid-area: wb_pic5;
 }
 
-.wb_pic6 {
-  background-image: url(/img/wb_pic6.jpg);
-  background-size: cover;
+.hipster-item-wb--6 {
   grid-area: wb_pic6;
 }
 
 .hipster__without-borders {
-  width: 100vw;
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: 50vh 50vh;
   grid-template-areas:
     "pic1 pic2 pic3 pic4"
     "pic5 pic6 pic7 pic8";
-}
-
-/* .hipster__black-ground {
-  position: absolute;
   background-image: url(/img/BG.png);
   background-size: cover;
   z-index: 2;
-  opacity: 0.5;
-  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
-} */
+}
 
-.pic1 {
-  background-image: url(/img/pic1.jpg);
-  background-size: cover;
+.hipster-item--1 {
   grid-area: pic1;
+  opacity: 0.3;
 }
 
-.pic2 {
-  background-image: url(/img/pic2.png);
-  background-size: cover;
+.hipster-item--2 {
   grid-area: pic2;
+  opacity: 0.3;
 }
 
-.pic3 {
-  background-image: url(/img/pic3.jpg);
-  background-size: cover;
+.hipster-item--3 {
   grid-area: pic3;
+  opacity: 0.3;
 }
 
-.pic4 {
-  background-image: url(/img/pic4.jpg);
-  background-size: cover;
+.hipster-item--4 {
   grid-area: pic4;
+  opacity: 0.3;
 }
 
-.pic5 {
-  background-image: url(/img/pic5.jpg);
-  background-size: cover;
+.hipster-item--5 {
   grid-area: pic5;
+  opacity: 0.3;
 }
 
-.pic6 {
-  background-image: url(/img/pic6.jpg);
-  background-size: cover;
+.hipster-item--6 {
   grid-area: pic6;
+  opacity: 0.3;
 }
 
-.pic7 {
-  background-image: url(/img/pic7.jpg);
-  background-size: cover;
+.hipster-item--7 {
   grid-area: pic7;
+  opacity: 0.3;
 }
 
-.pic8 {
-  background-image: url(/img/pic8.jpg);
-  background-size: cover;
+.hipster-item--8 {
   grid-area: pic8;
+  opacity: 0.3;
 }
