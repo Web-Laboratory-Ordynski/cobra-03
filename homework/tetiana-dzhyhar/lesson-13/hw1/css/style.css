@@ -10,11 +10,11 @@
 
 .hipster__with-borders {
   width: 100vw;
-  padding: 4.2vw;
+  padding: 5.3vw;
   display: grid;
-  grid-template-columns: 30vw 27.17vw 27.17vw;
+  grid-template-columns: 28.17vw 27.17vw 27.17vw;
   grid-template-rows: 20vw 20vw 35vw;
-  grid-gap: 3.33vw;
+  grid-gap: 3.3vw;
   grid-template-areas:
     "wb_pic1 wb_pic1 wb_pic2"
     "wb_pic1 wb_pic1 wb_pic3"
@@ -58,10 +58,9 @@
 }
 
 .hipster__without-borders {
-  position: relative;
-  width: 100%;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
   grid-template-rows: 50vh 50vh;
   grid-template-areas:
     "pic1 pic2 pic3 pic4"
