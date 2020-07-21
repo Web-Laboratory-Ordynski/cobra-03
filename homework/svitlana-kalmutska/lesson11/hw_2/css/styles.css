@@ -44,7 +44,7 @@
 .content__main-box {
     width: 66%;
     height: 540px;
-    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(/images/cars_main.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), url('/images/cars_main.jpg');
     background-repeat: no-repeat;
     text-transform: uppercase;
     display: flex;
@@ -52,8 +52,6 @@
     justify-content: flex-end;
     margin-bottom: 20px;
 }
-
-/* I still can't find the correct gradient parameter for this image but I will in future )*/
 
 .main-box__data {
     font-family: 'ProximaNovaCond-Semibold';
@@ -132,11 +130,11 @@
 .bottom {
     padding-top: 87px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .bottom__icon {
-    padding-left: 670px;
+    padding-right: 20px;
 }
 
 .bottom__text {
@@ -147,5 +145,4 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #99a5b0;
-    padding-right: 698px;
 }
