@@ -9,10 +9,8 @@
   </head>
   <body>
     <div class="top-page">
-      <div class="header">
-        <div class="header__logo-wrapper">
-          <img class="header__logo" src="img/logo.svg" alt="" />
-        </div>
+      <div class="top-page__header header">
+        <img class="header__logo" src="img/logo.svg" alt="" />
         <div class="header__title">WORKING <br />WITH design LAB</div>
         <div class="header__text">
           We’ve been helping startups launch and grow their businesses. We help
@@ -20,13 +18,15 @@
           management.
         </div>
       </div>
-      <a href="#about-us"><img class="scroll" src="img/scroll.svg" alt="" /></a>
+      <a href="#about-us"
+        ><img class="header__scroll" src="img/scroll.svg" alt=""
+      /></a>
     </div>
 
     <div id="about-us" class="about-us">
-      <div class="about-us__container border-container">
-        <div class="border-container__title">ABOUT US</div>
-        <div class="border-container__text-wrapper">
+      <div class="about-us__container">
+        <div class="border-container">
+          <div class="border-container__title">ABOUT US</div>
           <div class="border-container__text">
             When you work with us, you are part of a team of committed
             collaborators. All aspects of our software development process are
@@ -45,73 +45,95 @@
       </div>
     </div>
     <div class="services">
-      <div
-        class="services__container border-container border-container--services"
-      >
-        <div class="border-container__title border-container__title--services">
-          SERVICES
-        </div>
-        <div class="border-container__text-wrapper">
-          <div class="border-container__text border-container__text--services">
-            Before we sign a contract or write a line of code our team will
-            spend the necessary time needed to understand your product
-            vision.<br />
-            The outcome of this scoping session is a proposal or high-level
-            statement of work.<br />
-            Based on your requirements, we can provide a complete offering or
-            just the pieces you need.
+      <div class="services__container">
+        <div class="border-container border-container--services">
+          <div
+            class="border-container__title border-container__title--services"
+          >
+            SERVICES
+          </div>
+          <div class="border-container__text-wrapper">
+            <div
+              class="border-container__text border-container__text--services"
+            >
+              Before we sign a contract or write a line of code our team will
+              spend the necessary time needed to understand your product
+              vision.<br />
+              The outcome of this scoping session is a proposal or high-level
+              statement of work.<br />
+              Based on your requirements, we can provide a complete offering or
+              just the pieces you need.
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="what-we-do">
-      <div class="what-we-do__container border-container">
-        <div class="border-container__title">what we do</div>
-        <div
-          class="border-container__text-wrapper border-container__text-wrapper--what-we-do"
-        >
-          <div class="border-container__section section">
-            <img class="section__logo" src="img/design.svg" alt="" />
-            <div class="section__title">DESIGN</div>
-            <div class="section__text">
-              Our design practice offers a full range of services including
-              branding strategy, interaction and visual design and user
-              experience testing.<br />
-              Throughout your project, our designers create and implement visual
-              designs and workflows, solicit user feedback, and work with you to
-              make sure what gets built is what is needed.
+      <div class="what-we-do__container">
+        <div class="border-container">
+          <div class="border-container__title">what we do</div>
+          <div class="border-container__text">
+            <div class="container-section">
+              <div class="container-section__wrapper">
+                <img
+                  class="container-section__logo"
+                  src="img/design.svg"
+                  alt="design"
+                />
+                <div class="container-section__title">DESIGN</div>
+                <div class="container-section__text">
+                  Our design practice offers a full range of services including
+                  branding strategy, interaction and visual design and user
+                  experience testing.<br />
+                  Throughout your project, our designers create and implement
+                  visual designs and workflows, solicit user feedback, and work
+                  with you to make sure what gets built is what is needed.
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="border-container__section section">
-            <img class="section__logo" src="img/development.svg" alt="" />
-            <div class="section__title">Development</div>
-            <div class="section__text">
-              All engineers are fluent in the latest enterprise, mobile and web
-              development technologies.<br />
-              They collaborate with your team to write, test, and improve code
-              on a daily basis, using<br />
-              proven practices such as test-driven development and pair
-              programing.
+            <div class="container-section">
+              <div class="container-section__wrapper">
+                <img
+                  class="container-section__logo"
+                  src="img/development.svg"
+                  alt="development"
+                />
+                <div class="container-section__title">Development</div>
+                <div class="container-section__text">
+                  All engineers are fluent in the latest enterprise, mobile and
+                  web development technologies.<br />
+                  They collaborate with your team to write, test, and improve
+                  code on a daily basis, using<br />
+                  proven practices such as test-driven development and pair
+                  programing.
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="border-container__section section">
-            <img class="section__logo" src="img/prod-man.svg" alt="" />
-            <div class="section__title">Product Management</div>
-            <div class="section__text">
-              Planning and development is iterative. Because we are constantly
-              coding and testing, the<br />
-              products we build are always ready to go live. This iterative
-              process allows for changes as<br />
-              business requirements evolve.
+            <div class="container-section">
+              <div class="container-section__wrapper">
+                <img
+                  class="container-section__logo"
+                  src="img/prod-man.svg"
+                  alt="product-management"
+                />
+                <div class="container-section__title">Product Management</div>
+                <div class="container-section__text">
+                  Planning and development is iterative. Because we are
+                  constantly coding and testing, the<br />
+                  products we build are always ready to go live. This iterative
+                  process allows for changes as<br />
+                  business requirements evolve.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="grid-container">
+    <div class="grid__container">
       <div class="grid-container__item grid-container__item--topworkz">
         <div class="grid-container__title">topworkz</div>
       </div>
@@ -131,20 +153,21 @@
         <div class="grid-container__title">Kyiv</div>
       </div>
     </div>
-
     <div class="contact-us">
-      <div class="contact__container border-container">
-        <div class="border-container__title">CONTACT us</div>
-        <div class="border-container__text-wrapper">
+      <div class="contact-us__container">
+        <div class="border-container">
+          <div class="border-container__title">CONTACT us</div>
           <div class="border-container__text">
             Planning and development is iterative. Because we are constantly
             coding and testing, the products we build are always ready to go
             live. This iterative process allows for changes as business
             requirements evolve.
           </div>
-          <div class="border-container__button button">
-            <div class="button__text">CONTACT us</div>
-          </div>
+          <a class="border-container__click" href="#">
+            <div class="border-container__button button">
+              <div class="button__text">CONTACT us</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
