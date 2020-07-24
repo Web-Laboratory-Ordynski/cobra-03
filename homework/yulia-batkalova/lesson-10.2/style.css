@@ -1,0 +1,123 @@
+.body{
+    background-image: url(../lesson-10.2/images/Group\ 3\ copy@1X.png), url(../lesson-10.2/images/Layer\ 5@1X.png), url(../lesson-10.2/images/Layer\ 6@1X.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.main{
+    background-image: url(../lesson-10.2/images/Rounded\ Rectangle\ 1@1X.png);
+    width: 687px;
+    height: 392px;
+    margin: auto;
+    margin-top: 158px;
+    display: flex;
+}   
+
+.main-left__logo{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 65px;
+    scrollbar-highlight-color: 33px;
+}
+
+.main-left__nike{
+    width: 329px;
+    height: 159px;
+    padding-top: 48px;
+    padding-left: 37px;
+}
+
+.main-left__scroll{
+    width: 72px;
+    height: 18px;
+    padding-top: 88px;
+    padding-left: 175px;
+}
+
+.main-right__title{
+    color: #7A7D84;
+    width: 155px;
+    height: 44px;
+    font-size: 24px;
+    padding-top: 79px;
+    padding-left: 47px;
+}
+
+.main-right__text{
+    color: #7A7D84;
+    height: 14px;
+    width: 172px;
+    font-size: 14px;
+    padding-left: 47px;
+    padding-top: 8px;
+}
+
+.star{
+    overflow: hidden;
+	width: 100px;
+    margin: 0 auto;
+    padding-left: 0px;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.star:not(:checked) > input {
+    display: none;
+}
+
+.star:not(:checked) > label {
+	float: right;
+	width: 15px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 20px;
+	color: #7A7D84;
+}
+.star:not(:checked) > label:before {
+	content: '★';
+}
+.star > input:checked ~ label {
+	color: gold;
+}
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.star > input:checked + label:hover,
+.star > input:checked + label:hover ~ label,
+.star > input:checked ~ label:hover,
+.star > input:checked ~ label:hover ~ label,
+.star > label:hover ~ input:checked ~ label {
+	color: gold;
+}
+.star > label:active {
+	position: relative;
+}
+
+.list-one{
+    display: flex;
+    padding-bottom: 28px;
+    margin-left: 47px;
+    margin-top: 20px;
+}
+
+.list-one select{
+    font-size: 17px ;
+    color: #7A7D84;
+    background-color: #111A28;
+    padding-top: 7px;
+    padding-right: 9px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+}
+
+.btn{
+    background-color: #202835;
+    color: #7A7D84;
+    border: 2px solid #7A7D84;
+    padding: 10px 50px;
+    margin-left: 47px;
+}
