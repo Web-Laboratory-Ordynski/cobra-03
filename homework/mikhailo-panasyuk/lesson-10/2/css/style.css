@@ -1,0 +1,138 @@
+@font-face{
+    font-family: 'MuseoSansRounded-100';
+    src: url(../font/MuseoSansRounded-100.woff);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/main\ bg.png)  no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    max-width: 687px;
+    margin: auto;
+}
+.goods__card{
+    background-color: #111A28;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 56px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.goods__logo{
+    padding-bottom: 69px;
+}
+.goods__text{
+    padding-bottom: 24px;
+}
+.goods__title{
+    font-size: 24px;
+    color: #E1E1E1;
+    max-width: 155px;
+    font-family: MuseoSansRounded-100 , serif;
+    padding-bottom: 16px;
+}
+.goods__subtitle{
+    color: #E1E1E1;
+    font-size: 14px;
+    font-family: MuseoSansRounded-100 , serif;
+    opacity: 0.5;
+}
+.goods__star{
+    padding-bottom: 26px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.goods__star-mark path{
+    fill: yellow !important;
+}
+.goods__star svg:hover path{
+    fill: yellow !important;
+}
+.goods__question{
+    display: flex;
+    padding-bottom: 28px;
+}
+.goods__size{
+    padding-right: 1px;
+}
+.goods__question select{
+    font-size: 14px ;
+    font-family: MuseoSansRounded-100 , serif;
+    color: #E1E1E1;
+    background-color: #111A28;
+    padding: 11px 15px;
+    outline: none;
+    cursor: pointer;
+}
+.goods__btn button{
+    background-color: #202835;
+    color: #E1E1E1;
+    border: 2px solid #4F5560;
+    padding: 15px 60px;
+    font-size: 14px;
+    font-family: MuseoSansRounded-100 , serif;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.goods__btn button:hover{
+    background-color: yellow;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    color: Black;
+    font-weight: 900;
+}
+.goods__presentation{
+    padding-right: 80px;
+}
+.goods__foto{
+    padding-bottom: 72px;
+}
+.goods__color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goods__color span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    border: 1px solid transparent;
+}
+.goods__color span:hover{
+    border: 1px solid #7D828A;
+}
+.goods__color span:last-of-type{
+    margin-right: 0;
+}
+.goods__color-active{
+    height: 13px !important;
+    width: 13px !important;
+    border: 1px solid #7D828A !important;
+}
+.goods__color-black{
+    background-color: black;
+}
+.goods__color-white{
+    background-color: white;
+}
+.goods__color-red{
+    background-color: red;
+}
+.goods__color-skyblue{
+    background-color: skyblue;
+}
