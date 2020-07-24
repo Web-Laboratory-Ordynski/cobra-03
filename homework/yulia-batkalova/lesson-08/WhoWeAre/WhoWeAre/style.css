@@ -1,0 +1,70 @@
+*{
+    transition: all .1s ease-in;
+}
+
+h1{
+    text-align: center;
+    margin-top: 108px;
+    margin-bottom: 64px;
+}
+
+.text{
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.about_us{
+    display: flex;
+    justify-content: center;
+}
+
+.Ross{
+    width: 270px;
+    height: 269px;
+    background-size: cover;
+    padding: 17px;
+    background-image: url(../images/ross.png);
+}
+
+.Ross:hover{
+    background-image: url(../images/markers.png);
+}
+
+.Chendler{
+    width: 270px;
+    height: 269px;
+    background-size: cover;
+    padding: 17px;
+    background-image: url(../images/chendler.png);
+    margin-left: 29px;
+}
+
+.Chendler:hover{
+    background-image: url(../images/markers.png);
+}
+
+.Rachel{
+    width: 270px;
+    height: 269px;
+    background-size: cover;
+    padding: 17px;
+    background-image: url(../images/Rachel.png);
+    margin-left: 29px;
+}
+
+.Rachel:hover{
+    background-image: url(../images/markers.png);
+}
+
+.Monica{
+    width: 270px;
+    height: 269px;
+    background-size: cover;
+    padding: 17px;
+    background-image: url(../images/Monica.png);
+    margin-left: 29px;
+}
+
+.Monica:hover{
+    background-image: url(../images/markers.png);
+}
