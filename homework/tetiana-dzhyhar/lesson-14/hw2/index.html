@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="top-page">
+    <header class="top-page">
       <div class="top-page__header header">
         <img class="header__logo" src="img/logo.svg" alt="" />
         <div class="header__title">WORKING <br />WITH design LAB</div>
@@ -18,20 +18,22 @@
           management.
         </div>
       </div>
-      <a href="#about-us"
-        ><img class="header__scroll" src="img/scroll.svg" alt=""
-      /></a>
-    </div>
+      <div class="header__link">
+        <a href="#about-us">
+          <img class="header__scroll" src="img/scroll.svg" alt="" />
+        </a>
+      </div>
+    </header>
 
-    <div id="about-us" class="about-us">
+    <section id="about-us" class="about-us">
       <div class="about-us__container">
         <div class="border-container">
           <div class="border-container__title">ABOUT US</div>
-          <div class="border-container__text">
+          <p class="border-container__text">
             When you work with us, you are part of a team of committed
             collaborators. All aspects of our software development process are
             integrated, iterative and agile.
-            <div
+            <p
               class="border-container__text border-container__text--2nd-paragrath"
             >
               Our approach unifies design, development and<br />product
@@ -39,12 +41,13 @@
               project by understanding your business goals, the user’s needs and
               the product requirements.<br />Then we help translate them into
               effective and elegant solutions.
-            </div>
-          </div>
+            </p>
+          </p>
         </div>
       </div>
-    </div>
-    <div class="services">
+    </section>
+
+    <section class="services">
       <div class="services__container">
         <div class="border-container border-container--services">
           <div
@@ -53,7 +56,7 @@
             SERVICES
           </div>
           <div class="border-container__text-wrapper">
-            <div
+            <p
               class="border-container__text border-container__text--services"
             >
               Before we sign a contract or write a line of code our team will
@@ -63,18 +66,18 @@
               statement of work.<br />
               Based on your requirements, we can provide a complete offering or
               just the pieces you need.
-            </div>
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="what-we-do">
+    <section class="what-we-do">
       <div class="what-we-do__container">
         <div class="border-container">
           <div class="border-container__title">what we do</div>
           <div class="border-container__text">
-            <div class="container-section">
+            <article class="container-section">
               <div class="container-section__wrapper">
                 <img
                   class="container-section__logo"
@@ -82,18 +85,18 @@
                   alt="design"
                 />
                 <div class="container-section__title">DESIGN</div>
-                <div class="container-section__text">
+                <p class="container-section__text">
                   Our design practice offers a full range of services including
                   branding strategy, interaction and visual design and user
                   experience testing.<br />
                   Throughout your project, our designers create and implement
                   visual designs and workflows, solicit user feedback, and work
                   with you to make sure what gets built is what is needed.
-                </div>
+                </p>
               </div>
-            </div>
+            </article>
 
-            <div class="container-section">
+            <article class="container-section">
               <div class="container-section__wrapper">
                 <img
                   class="container-section__logo"
@@ -101,18 +104,18 @@
                   alt="development"
                 />
                 <div class="container-section__title">Development</div>
-                <div class="container-section__text">
+                <p class="container-section__text">
                   All engineers are fluent in the latest enterprise, mobile and
                   web development technologies.<br />
                   They collaborate with your team to write, test, and improve
                   code on a daily basis, using<br />
                   proven practices such as test-driven development and pair
                   programing.
-                </div>
+                </p>
               </div>
-            </div>
+            </article>
 
-            <div class="container-section">
+            <article class="container-section">
               <div class="container-section__wrapper">
                 <img
                   class="container-section__logo"
@@ -120,20 +123,21 @@
                   alt="product-management"
                 />
                 <div class="container-section__title">Product Management</div>
-                <div class="container-section__text">
+                <p class="container-section__text">
                   Planning and development is iterative. Because we are
                   constantly coding and testing, the<br />
                   products we build are always ready to go live. This iterative
                   process allows for changes as<br />
                   business requirements evolve.
-                </div>
+                </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-    <div class="grid__container">
+    </section>
+
+    <section class="grid__container">
       <div class="grid-container__item grid-container__item--topworkz">
         <div class="grid-container__title">topworkz</div>
       </div>
@@ -152,25 +156,28 @@
       <div class="grid-container__item grid-container__item--kyiv">
         <div class="grid-container__title">Kyiv</div>
       </div>
-    </div>
-    <div class="contact-us">
+    </section>
+
+    <footer class="contact-us">
       <div class="contact-us__container">
         <div class="border-container">
           <div class="border-container__title">CONTACT us</div>
-          <div class="border-container__text">
+          <p class="border-container__text">
             Planning and development is iterative. Because we are constantly
             coding and testing, the products we build are always ready to go
             live. This iterative process allows for changes as business
             requirements evolve.
+          </p>
+          <div class="border-container__button">
+            <a class="border-container__link" href="#">
+              <div class="button">
+                <div class="button__text">CONTACT us</div>
+              </div>
+            </a>
           </div>
-          <a class="border-container__click" href="#">
-            <div class="border-container__button button">
-              <div class="button__text">CONTACT us</div>
-            </div>
-          </a>
         </div>
       </div>
-    </div>
+    </footer>
     <div class="copyright">
       <img src="img/logo-black.svg" alt="" class="copyright__logo" />
       <div class="copyright__text">
