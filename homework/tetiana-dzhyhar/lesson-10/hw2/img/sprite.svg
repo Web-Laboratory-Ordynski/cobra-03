@@ -1,0 +1,11 @@
+<svg display="none" 
+xmlns="http://www.w3.org/2000/svg">
+  <symbol id="star" viewBox="0 0 12 12">
+    <g id="surface1">
+      <path
+        style=" stroke:none;fill-rule:nonzero;fill:rgb(50.196078%,50.196078%,50.196078%);fill-opacity:1;"
+        d="M 6 0.546875 L 9.554688 11.453125 L 0.109375 4.691406 L 11.890625 4.691406 L 2.445312 11.453125 " />
+    </g>
+  </symbol>
+</svg>
+
