@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/fonts/Proxima Nova Regular.otf");
+}
+
+header {
+  position: absolute;
+  right: 0;
+  top: 47px;
+  z-index: 2;
+}
+
+main {
+  position: absolute;
+  width: 88.33%;
+  left: 5.83%;
+  top: 150px;
+  background-color: #ffffff;
+}
+
+span {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  width: 90.97%;
+  height: 925px;
+  /* margin-right: 119px; */
+  background-color: #464f54;
+}
+
+.title {
+  margin: 0;
+  width: 73%;
+  box-shadow: -3.5px -3.5px 59px 0 rgba(0, 0, 0, 0.16);
+  background-color: #181818;
+}
+
+.little-title-text {
+  padding: 50px 0px 13px 63px;
+  background-color: #181818;
+  font-family: ProximaNova;
+  font-size: 15px;
+  line-height: 0.7;
+  letter-spacing: 4.8px;
+  text-align: left;
+  color: #767676;
+}
+
+.big-title-text {
+  position: relative;
+  margin-left: 64px;
+  margin-right: 53.5%;
+  margin-bottom: 74px;
+  background-color: #181818;
+  font-family: PlayfairDisplay;
+  font-size: 48px;
+  line-height: 0.75;
+  text-align: left;
+  color: #fefefe;
+  border-right: 0.5px solid #ffffff;
+}
+
+.input-Line {
+  width: 800px;
+  height: 3px;
+  margin-left: 63px;
+  position: absolute;
+  top: 134px;
+  background-color: #ffffff;
+  opacity: 0.1;
+}
+
+.editor {
+  position: absolute;
+  top: 229px;
+  left: 27%;
+  width: 73%;
+  padding: 24px 226px 25px 42px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 64px;
+  box-shadow: -3.5px -3.5px 59px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fbc02d;
+  z-index: 1;
+}
+
+.content {
+  width: 94%;
+  background-color: #ffffff;
+}
+
+.content-text {
+  position: relative;
+  width: 100%;
+  right: 0;
+  top: 0px;
+  padding-top: 175px;
+  padding-left: 67px;
+  border-left: 1px solid #b4b4b4;
+  margin-left: 67px;
+  background-color: #ffffff;
+}
+
+.roy-batty-2019 {
+  font-family: ProximaNova;
+  font-size: 20px;
+  letter-spacing: 4.38px;
+  text-align: left;
+  color: #b4b4b4;
+}
+
+.like-tears-in-rain {
+  padding: 47px 0px 21px 0px;
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 0.8;
+  text-align: left;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.where-am-I-going {
+  padding-bottom: 55px;
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: italic;
+  text-align: justify;
+  color: #8f8f8f;
+}
+
+.paragraph {
+  padding-bottom: 39px;
+  padding-right: 50px;
+  font-family: Georgia;
+  font-size: 27px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #000000;
+}
+
+.icon-bold {
+  opacity: 1;
+}
+
+[class*="icon"] {
+  font-size: 20px;
+}
