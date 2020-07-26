@@ -1,23 +1,126 @@
-.delivery {
-  fill: black;
-  width: 54px;
-  height: 54px;
+.our-services {
+  width: 100vw;
+  height: 100vh;
+  background-color: #70bfff;
 }
 
-.organized {
-  fill: black;
-  width: 55px;
-  height: 55px;
+.our-servicer__container {
+  padding: 10vh 15vw 19.11vh 13.66vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.quality {
-  fill: black;
-  width: 55px;
-  height: 55px;
+.our-services__items {
+  padding: 0;
+  margin: 10vh 0;
+  height: 60vh;
 }
 
-.shopping {
+.items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.items__item {
+  width: 26.67vw;
+  height: 12.65vh;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.item {
+  display: flex;
+}
+
+.item__title-container {
+  position: relative;
+  width: 80%;
+  border-right: 0.5px solid #9d9d9d;
+}
+
+.item__title {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 74%;
+  height: 25%;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #262626;
+}
+
+.item__title--delivery {
+  height: 50%;
+}
+
+.item__icon-container {
+  position: relative;
+  width: 20%;
+}
+
+.item__icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   fill: black;
-  width: 55px;
-  height: 55px;
+}
+
+.item__icon--shopping {
+  width: 2.93vw;
+  height: 6.2vh;
+}
+
+.item__icon--quality {
+  width: 3.67vw;
+  height: 6.2vh;
+}
+
+.item__icon--delivery {
+  width: 3.6vw;
+  height: 6.2vh;
+}
+
+.item__icon--organized {
+  width: 3.67vw;
+  height: 6.2vh;
+}
+
+.our-services__photo {
+  position: relative;
+  width: 27.8vw;
+}
+
+.our-services__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.our-services__title {
+  width: 539px;
+  height: 67px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: -7.5vw;
+  right: 0;
+  bottom: 0;
+  font-family: Raleway;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 0.3;
+  text-align: center;
+  color: #ffffff;
 }
