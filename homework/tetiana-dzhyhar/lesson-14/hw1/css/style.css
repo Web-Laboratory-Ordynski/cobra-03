@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(/fonts/Raleway-Bold.ttf);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .our-services {
   width: 100vw;
   height: 100vh;
@@ -5,7 +15,7 @@
 }
 
 .our-servicer__container {
-  padding: 10vh 15vw 19.11vh 13.66vw;
+  padding: 10vh 15vw 0vh 13.66vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,31 +36,27 @@
 }
 
 .items__item {
-  width: 26.67vw;
-  height: 12.65vh;
+  display: flex;
   box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
 }
 
 .item {
-  display: flex;
+  width: 26.67vw;
+  height: 12.65vh;
 }
 
 .item__title-container {
-  position: relative;
   width: 80%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-right: 0.5px solid #9d9d9d;
 }
 
 .item__title {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 74%;
-  height: 25%;
+  margin: 0;
   font-family: Raleway;
   font-size: 15px;
   font-weight: bold;
@@ -59,42 +65,22 @@
 }
 
 .item__title--delivery {
-  height: 50%;
+  width: 80%;
 }
 
 .item__icon-container {
-  position: relative;
   width: 20%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__icon {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin: 0;
+  width: 3.67vw;
+  height: 6.2vh;
   fill: black;
-}
-
-.item__icon--shopping {
-  width: 2.93vw;
-  height: 6.2vh;
-}
-
-.item__icon--quality {
-  width: 3.67vw;
-  height: 6.2vh;
-}
-
-.item__icon--delivery {
-  width: 3.6vw;
-  height: 6.2vh;
-}
-
-.item__icon--organized {
-  width: 3.67vw;
-  height: 6.2vh;
 }
 
 .our-services__photo {
@@ -109,18 +95,21 @@
 }
 
 .our-services__title {
-  width: 539px;
   height: 67px;
   position: absolute;
   margin: auto;
   top: 0;
-  left: -7.5vw;
+  left: -5.5vw;
   right: 0;
   bottom: 0;
   font-family: Raleway;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bold;
   line-height: 0.3;
   text-align: center;
   color: #ffffff;
 }
+
+/* .items__item:hover {
+  background-color: rgb(215, 215, 228);
+} */
