@@ -8,7 +8,7 @@
 
 .top-page {
   width: 98.7vw;
-  @include backgr (url(/img/hero-bg.png));
+  @include backgr(url(/img/hero-bg.png));
   @extend %backgr;
   height: 100vh;
 
@@ -27,7 +27,7 @@
 
   &__title {
     height: 103px;
-    @include text (35px, bold, 8.64px);
+    @include text(35px, bold, 8.64px);
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
@@ -36,7 +36,7 @@
   &__text {
     height: 70px;
     text-transform: uppercase;
-    @include text (12px, normal, 0.9px);
+    @include text(12px, normal, 0.9px);
     line-height: 1.93;
     color: #ffffff;
     text-align: center;
@@ -49,7 +49,6 @@
   &__scroll {
     width: 23px;
     height: 37px;
-
   }
 
   &__scroll:hover {
@@ -80,7 +79,7 @@
     top: -12px;
     left: 13.5vw;
     background-color: inherit;
-    @include text (20px, bold, 5.44px);
+    @include text(20px, bold, 5.44px);
     text-transform: uppercase;
     text-align: center;
     color: #3c3c3c;
@@ -90,7 +89,7 @@
   &__text {
     width: 66%;
     @include container-position(5%, 2%);
-    @include text (12px, 300, normal);
+    @include text(12px, 300, normal);
     line-height: 1.5;
     text-align: center;
     color: #3c3c3c;
@@ -130,7 +129,7 @@
 
 .services {
   width: 98.7vw;
-  @include backgr (url(/img/services.png));
+  @include backgr(url(/img/services.png));
   @extend %backgr;
   height: 45vh;
 
@@ -149,19 +148,17 @@
   }
 }
 
-
 .container-section {
   &__wrapper {
     height: 35vh;
     @include container-position(10px, 10px);
     @include flex(space-around, center, column, wrap);
-
   }
 
   &__title {
     width: 100%;
     height: 16px;
-    @include text (11px, bold, 2px);
+    @include text(11px, bold, 2px);
     text-align: center;
     text-transform: uppercase;
     color: #3c3c3c;
@@ -170,7 +167,7 @@
   &__text {
     width: 100%;
     height: 60px;
-    @include text (10px, 300, normal);
+    @include text(10px, 300, normal);
     line-height: 1.85;
     text-align: center;
     color: #3c3c3c;
@@ -182,7 +179,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 5.5px;
-  grid-template-areas: "topworkz joint market"
+  grid-template-areas:
+    "topworkz joint market"
     "worktop lable kyiv";
 
   &__item {
@@ -193,42 +191,42 @@
   &__item--topworkz {
     grid-area: topworkz;
     width: 28.5vw;
-    @include backgr (url(/img/topworkz.png));
+    @include backgr(url(/img/topworkz.png));
     @extend %backgr;
   }
 
   &__item--joint {
     grid-area: joint;
     width: 40.77vw;
-    @include backgr (url(/img/joint.png));
+    @include backgr(url(/img/joint.png));
     @extend %backgr;
   }
 
   &__item--market {
     grid-area: market;
     width: 28.5vw;
-    @include backgr (url(/img/market.png));
+    @include backgr(url(/img/market.png));
     @extend %backgr;
   }
 
   &__item--worktop {
     grid-area: worktop;
     width: 28.5vw;
-    @include backgr (url(/img/worktop.png));
+    @include backgr(url(/img/worktop.png));
     @extend %backgr;
   }
 
   &__item--lable {
     grid-area: lable;
     width: 40.77vw;
-    @include backgr (url(/img/lable.png));
+    @include backgr(url(/img/lable.png));
     @extend %backgr;
   }
 
   &__item--kyiv {
     grid-area: kyiv;
     width: 28.5vw;
-    @include backgr (url(/img/kyiv.png));
+    @include backgr(url(/img/kyiv.png));
     @extend %backgr;
   }
 
@@ -236,7 +234,7 @@
     position: absolute;
     bottom: 17.72%;
     left: 8.9%;
-    @include text (18px, bold, 5.44px);
+    @include text(18px, bold, 5.44px);
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -249,7 +247,6 @@
     width: 47vw;
     @include container-position(10vh, 10vh);
   }
-
 }
 
 .button {
@@ -262,7 +259,7 @@
   &__text {
     height: 11px;
     @extend %position-center-abs;
-    @include text (10px, normal, 2.56px);
+    @include text(10px, normal, 2.56px);
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
@@ -275,7 +272,6 @@
   &:hover .button__text {
     color: black;
   }
-
 }
 
 .copyright {
@@ -291,7 +287,7 @@
   &__text {
     width: 245px;
     height: 18px;
-    @include text (14px, normal, normal);
+    @include text(14px, normal, normal);
     text-align: left;
     color: #3c3c3c;
   }
