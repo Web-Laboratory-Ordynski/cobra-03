@@ -16,12 +16,29 @@
   font-weight: 300;
 }
 
+.button__text {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.top-page, .services, .grid-container__item--topworkz, .grid-container__item--joint, .grid-container__item--market, .grid-container__item--worktop, .grid-container__item--lable, .grid-container__item--kyiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 
 .top-page {
-  width: 100vw;
+  width: 98.7vw;
   background-image: url(/img/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,10 +54,21 @@
 
 .header {
   width: 38vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__logo {
@@ -50,22 +78,22 @@
 .header__title {
   height: 103px;
   font-family: Lato;
-  text-transform: uppercase;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 8.64px;
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
 
 .header__text {
   height: 70px;
-  font-family: Lato;
   text-transform: uppercase;
+  font-family: Lato;
   font-size: 12px;
   font-weight: normal;
-  line-height: 1.93;
   letter-spacing: 0.9px;
+  line-height: 1.93;
   color: #ffffff;
   text-align: center;
 }
@@ -77,6 +105,12 @@
 .header__scroll {
   width: 23px;
   height: 37px;
+}
+
+.header__scroll:hover {
+  padding-top: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-us {
@@ -122,6 +156,7 @@
   font-family: Lato;
   font-size: 12px;
   font-weight: 300;
+  letter-spacing: normal;
   line-height: 1.5;
   text-align: center;
   color: #3c3c3c;
@@ -133,8 +168,34 @@
   margin: 0 auto;
 }
 
+.border-container--services {
+  background-color: inherit;
+  border-color: #ffffff;
+  border-top: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+  background-size: 13.5vw 1px, 13.5vw 1px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+}
+
+.border-container__title--services {
+  background-color: inherit;
+  color: #ffffff;
+}
+
+.border-container__text--services {
+  color: #ffffff;
+}
+
+.border-container__button {
+  margin: 10px auto 20px;
+  height: 44px;
+  width: 70%;
+}
+
 .services {
-  width: 98.5vw;
+  width: 98.7vw;
   background-image: url(/img/services.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,26 +210,6 @@
   padding-bottom: 10vh;
 }
 
-.border-container--services {
-  background-color: inherit;
-  border-color: #ffffff;
-  border-top: none;
-  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
-  background-size: 13.5vw 1px, 13.5vw 1px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: left top, right top;
-}
-
-.border-container__title--services {
-  background-color: inherit;
-  color: #ffffff;
-  /* z-index: 2; */
-}
-
-.border-container__text--services {
-  color: #ffffff;
-}
-
 .what-we-do {
   height: 132vh;
 }
@@ -180,20 +221,25 @@
   padding-bottom: 10vh;
 }
 
-.container-section {
-}
-
 .container-section__wrapper {
+  height: 35vh;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 35vh;
-}
-
-.container-section__logo {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container-section__title {
@@ -214,19 +260,21 @@
   font-family: Lato;
   font-size: 10px;
   font-weight: 300;
+  letter-spacing: normal;
   line-height: 1.85;
   text-align: center;
   color: #3c3c3c;
 }
 
-.grid__container {
+.grid-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 7.5px;
-  grid-template-areas:
-    "topworkz joint market"
-    "worktop lable kyiv";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 5.5px;
+      grid-template-areas: "topworkz joint market" "worktop lable kyiv";
 }
 
 .grid-container__item {
@@ -235,6 +283,8 @@
 }
 
 .grid-container__item--topworkz {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: topworkz;
   width: 28.5vw;
   background-image: url(/img/topworkz.png);
@@ -244,8 +294,10 @@
 }
 
 .grid-container__item--joint {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: joint;
-  width: 41.77vw;
+  width: 40.77vw;
   background-image: url(/img/joint.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,6 +305,8 @@
 }
 
 .grid-container__item--market {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: market;
   width: 28.5vw;
   background-image: url(/img/market.png);
@@ -262,6 +316,8 @@
 }
 
 .grid-container__item--worktop {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: worktop;
   width: 28.5vw;
   background-image: url(/img/worktop.png);
@@ -271,8 +327,10 @@
 }
 
 .grid-container__item--lable {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: lable;
-  width: 41.77vw;
+  width: 40.77vw;
   background-image: url(/img/lable.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,6 +338,8 @@
 }
 
 .grid-container__item--kyiv {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: kyiv;
   width: 28.5vw;
   background-image: url(/img/kyiv.png);
@@ -295,8 +355,8 @@
   font-family: Lato;
   font-size: 18px;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 5.44px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -311,12 +371,6 @@
   padding-bottom: 10vh;
 }
 
-.border-container__button {
-  margin: 10px auto 20px;
-  height: 44px;
-  width: 70%;
-}
-
 .button {
   position: relative;
   width: 100%;
@@ -326,28 +380,42 @@
 }
 
 .button__text {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   height: 11px;
   font-family: Lato;
   font-size: 10px;
+  font-weight: normal;
   letter-spacing: 2.56px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
 }
 
+.button:hover {
+  background-color: #ffffff;
+}
+
+.button:hover .button__text {
+  color: black;
+}
+
 .copyright {
   width: 290px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .copyright__logo {
@@ -360,19 +428,9 @@
   height: 18px;
   font-family: Lato;
   font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
   text-align: left;
   color: #3c3c3c;
 }
-
-.header__scroll:hover {
-  padding-top: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #ffffff;
-}
-
-.button:hover .button__text {
-  color: black;
-}
+/*# sourceMappingURL=style.css.map */
