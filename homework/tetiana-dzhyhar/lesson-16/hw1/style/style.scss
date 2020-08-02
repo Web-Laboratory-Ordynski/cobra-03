@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 
-@import "header.scss";
-@import "about-us.scss";
-@import "our-services.scss";
-@import "gallery.scss";
-@import "subscribe.scss";
+@import "header";
+@import "about-us";
+@import "our-services";
+@import "gallery";
+@import "subscribe";
+@import "blog";
+@import "footer";

@@ -16,6 +16,11 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
 .grid-container__item1, .grid-container__item2, .grid-container__item3, .grid-container__item4, .grid-container__item5, .subscribe {
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,8 +147,8 @@
 }
 
 .about-us {
+  width: 100vw;
   height: 100vh;
-  padding-right: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +417,7 @@
 }
 
 .description__button-container--gallery {
-  margin: 40px auto;
+  margin: 40px auto 0;
   background-color: #5585a2;
 }
 
@@ -476,5 +481,402 @@
 .description__button-container--subscribe {
   display: inline-block;
   background-color: #96b92c;
+}
+
+.blog {
+  width: 100vw;
+  background-color: #b07cf7;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.blog__container {
+  padding: 50px 0 70px;
+}
+
+.blog__description {
+  margin: 0 auto;
+}
+
+.blog__photo-container {
+  margin: 0 auto 50px;
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description__title--blog {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.description__container-text--blog {
+  width: 600px;
+}
+
+.text-description--blog {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.photo-container {
+  position: relative;
+  width: 31.62%;
+  height: 312px;
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.photo-container--smoothie {
+  background-image: url(/img/blog1.png);
+}
+
+.photo-container--smoothie:hover {
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.photo-container--soup {
+  background-image: url(/img/blog2.png);
+  background-position-x: 0px;
+  background-position-y: -160px;
+}
+
+.photo-container--soup:hover {
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.photo-container--berries {
+  background-image: url(/img/blog3.png);
+  background-position-x: -60px;
+  background-position-y: 0px;
+}
+
+.photo-container--berries:hover {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.photo-container__date-square {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 5px;
+  background-color: #262626;
+}
+
+.photo-container__date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.photo-container__gradient {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 151px;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff));
+  background-image: linear-gradient(to top, #000000, #ffffff);
+}
+
+.photo-container__text {
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+  padding: 0px 0px 0px 20px;
+}
+
+.date {
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.date__number {
+  width: 34px;
+  height: 19px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 0.78;
+  text-align: left;
+  color: #ffffff;
+}
+
+.date__month {
+  width: 44px;
+  height: 15px;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.19;
+  text-align: left;
+  color: #ffffff;
+}
+
+.photo-text {
+  width: 372px;
+  height: 98px;
+}
+
+.photo-text__text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+}
+
+.photo-text__update {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 300;
+  bottom: 10px;
+}
+
+.description__button-container--blog {
+  margin: 0 auto;
+  background-color: #f72b3b;
+}
+
+.description__button-container--blog:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+input,
+textarea {
+  padding: 0;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+:-ms-input-placeholder {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+::-ms-input-placeholder {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+::placeholder {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+.contact {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.contact__container {
+  width: 100%;
+  height: 130vh;
+  background: no-repeat url(/img/contact.png);
+  background-size: cover;
+}
+
+.contact__description {
+  margin: 0 auto;
+}
+
+.contact__container {
+  padding: 50px 5vw 50px 5vw;
+}
+
+.contact__footer {
+  width: 100%;
+  height: 90px;
+  background-color: #262626;
+}
+
+.description__title--contact {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description__container-text--contact {
+  width: 350px;
+}
+
+.text-description--contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__form-container {
+  padding: 0 23.2% 120px 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form {
+  width: 30vw;
+  height: 445px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+
+.form__input:focus {
+  border-left: 5px solid #355b82;
+  opacity: 1;
+  outline: none;
+  color: white;
+}
+
+.form__message {
+  width: 100%;
+  height: 250px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+
+.contact-info__title {
+  width: 21vw;
+  height: 60px;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #262626;
+}
+
+.contact-info__info {
+  width: 350px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #b9b9b9;
+}
+
+.footer__logo {
+  font-family: Pacifico;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: #b9b9b9;
+}
+
+.footer__design {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #b9b9b9;
+}
+
+.footer__design--red {
+  font-weight: bold;
+  color: #ff2b58;
 }
 /*# sourceMappingURL=style.css.map */

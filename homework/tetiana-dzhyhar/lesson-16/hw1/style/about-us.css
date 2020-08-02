@@ -1,6 +1,6 @@
 .about-us {
+  width: 100vw;
   height: 100vh;
-  padding-right: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
