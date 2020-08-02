@@ -4,49 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cahee</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="first-container">
-      <div class="first-container__header">
-        <img src="img/logo.png" alt="logo" class="first-container__logo" />
-        <div class="first-container__nav nav">
-          <div class="nav__item item_menu item_menu--apperlined">HOME</div>
-          <div class="nav__item item_menu">ABOUT</div>
-          <div class="nav__item item_menu">SERVICES</div>
-          <div class="nav__item item_menu">GALLERY</div>
-          <div class="nav__item item_menu">BLOG</div>
-          <div class="nav__item item_menu">CONTACT</div>
-        </div>
+    <header class="header">
+      <div class="header__header">
+        <img src="img/logo.png" alt="logo" class="header__logo" />
+        <nav class="header__nav nav">
+          <div class="nav__item item-nav item-nav--apperlined">HOME</div>
+          <div class="nav__item item-nav">ABOUT</div>
+          <div class="nav__item item-nav">SERVICES</div>
+          <div class="nav__item item-nav">GALLERY</div>
+          <div class="nav__item item-nav">BLOG</div>
+          <div class="nav__item item-nav">CONTACT</div>
+        </nav>
       </div>
-      <div class="first-container__description description">
+
+      <div class="header__description description">
         <div class="description__title">Fresh Life</div>
         <div class="description__container-text text-description">
           Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco.
         </div>
-        <div class="description__button-container">
-          <div class="description__button-text">GET FREE NOW</div>
-        </div>
       </div>
-      <div class="first-container__icon icon">
+      <div class="description__button-container button">
+        <div class="button__text">GET FREE NOW</div>
+      </div>
+
+      <div class="header__icon icon">
         <img src="img/scroll.png" alt="scroll" />
       </div>
-    </div>
-    <div class="second-container">
-      <div class="second-container__photo">
-        <img src="img/img2.png" alt="berry plate" width="566" />
-      </div>
-      <div class="second-container__description">
+    </header>
+
+    <section class="about-us">
+      <img src="img/about-us.png" alt="berry plate" width="566" />
+
+      <div class="about-us__description">
         <div
-          class="second-container__title description__title description__title--second_container"
+          class="about-us__title description__title description__title--about-us"
         >
           About Us
         </div>
-        <div
-          class="second-container__text text-description text-description--second_container"
-        >
+        <div class="about-us__text text-description text-description--about-us">
           <p>
             Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -60,6 +60,128 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="our-services">
+      <div class="our-services__container">
+        <ul class="our-services__items items">
+          <li class="items__item item">
+            <div class="item__title-container">
+              <div class="item__title">Online Shopping</div>
+            </div>
+            <div class="item__icon-container">
+              <svg class="item__icon">
+                <use xlink:href="img/sprite.svg#pic1"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="items__item item">
+            <div class="item__title-container">
+              <div class="item__title">Quality Product</div>
+            </div>
+            <div class="item__icon-container">
+              <svg class="item__icon">
+                <use xlink:href="img/sprite.svg#pic2"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="items__item item">
+            <div class="item__title-container">
+              <div class="item__title item__title--delivery">
+                Domestic & International Delivery
+              </div>
+            </div>
+            <div class="item__icon-container">
+              <svg class="item__icon">
+                <use xlink:href="img/sprite.svg#pic3"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="items__item item">
+            <div class="item__title-container">
+              <div class="item__title">Well Organized</div>
+            </div>
+            <div class="item__icon-container">
+              <svg class="item__icon">
+                <use xlink:href="img/sprite.svg#pic4"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+        <div class="our-services__photo">
+          <img class="our-services__img" src="img/our-services.png" alt="" />
+          <div class="our-services__title">Our Services</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="gallery">
+        <div class="gallery__container">
+          <div class="gallery__description description">
+            <div class="description__title description__title--gallery">
+              Gallery
+            </div>
+            <div
+              class="description__container-text description__container-text--gallery text-description text-description--gallery"
+            >
+              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-container__item grid-container__item1"></div>
+            <div class="grid-container__item grid-container__item2"></div>
+            <div class="grid-container__item grid-container__item3"></div>
+            <div class="grid-container__item grid-container__item4"></div>
+            <div class="grid-container__item grid-container__item5"></div>
+          </div>
+          <div
+            class="description__button-container description__button-container--gallery button"
+          >
+            <div class="button__text">VIEW MORE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="subscribe">
+        <div class="subscribe__container">
+          <div class="subscribe__description description">
+            <div class="description__title description__title--subscribe">
+              Subscribe To Us
+            </div>
+            <div
+              class="description__container-text description__container-text--subscribe text-description text-description--subscribe"
+            >
+              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam.
+            </div>
+          </div>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email address..."
+              required
+            />
+            <div
+              class="description__button-container description__button-container--subscribe button"
+            >
+              <div class="button__text">SUBSCRIBE</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

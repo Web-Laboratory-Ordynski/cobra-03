@@ -1,0 +1,13 @@
+@import "fonts.scss";
+@import "mixins.scss";
+
+
+* {
+  box-sizing: border-box;
+}
+
+@import "header.scss";
+@import "about-us.scss";
+@import "our-services.scss";
+@import "gallery.scss";
+@import "subscribe.scss";

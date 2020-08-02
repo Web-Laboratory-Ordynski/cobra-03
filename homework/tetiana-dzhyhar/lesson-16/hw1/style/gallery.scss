@@ -1,0 +1,98 @@
+%backgr {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+@mixin backgr ($img) {
+  background-image: $img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.gallery {
+  width: 100vw;
+  // height: 100vh;
+  background-color: #ffe92f;
+
+  &__container {
+    padding: 50px 11vw 50px 11vw;
+  }
+
+  &__description {
+    margin: 0 auto;
+  }
+}
+
+.description {
+  &__title--gallery {
+    font-size: 90px;
+    font-weight: bold;
+    // width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__container-text--gallery {
+    width: 600px;
+  }
+}
+
+.text-description--gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1.5fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    "gallery1 gallery1 gallery2"
+    "gallery1 gallery1 gallery3"
+    "gallery4 gallery5 gallery5";
+
+  &__item1 {
+    grid-area: gallery1;
+    width: 51vw;
+    height: 38vw;
+    @include backgr(url(/img/gallery1.png));
+    @extend %backgr;
+  }
+
+  &__item2 {
+    grid-area: gallery2;
+    width: 24.4vw;
+    @include backgr(url(/img/gallery2.png));
+    @extend %backgr;
+  }
+
+  &__item3 {
+    grid-area: gallery3;
+    width: 24.4vw;
+    @include backgr(url(/img/gallery3.png));
+    @extend %backgr;
+  }
+
+  &__item4 {
+    grid-area: gallery4;
+    width: 38vw;
+    @include backgr(url(/img/gallery4.png));
+    @extend %backgr;
+  }
+
+  &__item5 {
+    grid-area: gallery5;
+    width: 38vw;
+    @include backgr(url(/img/gallery5.png));
+    @extend %backgr;
+  }
+
+}
+
+.description__button-container--gallery {
+  margin: 40px auto;
+  background-color: #5585a2;
+}

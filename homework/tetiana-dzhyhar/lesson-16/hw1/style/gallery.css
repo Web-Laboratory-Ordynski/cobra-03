@@ -1,0 +1,110 @@
+.grid-container__item1, .grid-container__item2, .grid-container__item3, .grid-container__item4, .grid-container__item5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.gallery {
+  width: 100vw;
+  background-color: #ffe92f;
+}
+
+.gallery__container {
+  padding: 50px 11vw 50px 11vw;
+}
+
+.gallery__description {
+  margin: 0 auto;
+}
+
+.description__title--gallery {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description__container-text--gallery {
+  width: 600px;
+}
+
+.text-description--gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 0.5fr 1fr;
+      grid-template-columns: 1.5fr 0.5fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr 1.5fr;
+  grid-gap: 15px;
+      grid-template-areas: "gallery1 gallery1 gallery2" "gallery1 gallery1 gallery3" "gallery4 gallery5 gallery5";
+}
+
+.grid-container__item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: gallery1;
+  width: 51vw;
+  height: 38vw;
+  background-image: url(/img/gallery1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.grid-container__item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: gallery2;
+  width: 24.4vw;
+  background-image: url(/img/gallery2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.grid-container__item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: gallery3;
+  width: 24.4vw;
+  background-image: url(/img/gallery3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.grid-container__item4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gallery4;
+  width: 38vw;
+  background-image: url(/img/gallery4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.grid-container__item5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: gallery5;
+  width: 38vw;
+  background-image: url(/img/gallery5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.description__button-container--gallery {
+  margin: 40px auto;
+  background-color: #5585a2;
+}
+/*# sourceMappingURL=gallery.css.map */
