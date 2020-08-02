@@ -1,0 +1,116 @@
+@font-face
+    font-family: 'Raleway-Black'
+    src: url(../fonts/Raleway/Raleway-Black.ttf)
+
+@font-face
+    font-family: 'Raleway-Bold'
+    src: url(../fonts/Raleway/Raleway-Bold.ttf)
+
+@font-face
+    font-family: 'Raleway-Light'
+    src: url(../fonts/Raleway/Raleway-Light.ttf)
+
+@font-face
+    font-family: 'Pacifico-Regular'
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf)
+.main 
+    background-image: url(../img/main&about/content-bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100vh
+    &__icon
+        padding-bottom: 68px
+        text-align: center
+        cursor: pointer
+.container
+    max-width: 1171px
+    margin: auto 
+.header
+    padding-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    &__logo
+        font-size: 50px
+        color: #262626
+        font-family: Pacifico-Regular , serif
+        line-height: 50px 
+    &__nav 
+    &__list
+        display: flex
+        list-style: none
+    &__item
+        margin-right: 20px
+        font-family: Raleway-Bold , serif
+        text-transform: uppercase
+        font-size: 16px
+        border-top: 4px solid transparent
+        transition: all ease 0.2s
+        display: flex
+        flex-direction: column
+        cursor: pointer
+        & span 
+            width: 0
+            min-height: 4px
+            background-color: #FF6033
+            transition: all ease 0.2s
+            margin-bottom: 5px
+        &:last-child
+            margin-right: 0
+        &:hover span
+            width: 100%
+    &__item-active
+        & span
+            width: 100%
+.content 
+    &__title 
+        padding-bottom: 34px
+        font-size: 60px
+        color: #262626
+        font-family: Raleway-Black, serif
+        line-height: 60px
+    &__descr
+        padding-bottom: 30px
+        font-size: 17px
+        color: #262626
+        font-family: Raleway-Light, serif
+        max-width: 368px
+    &__btn 
+        background-color: #FF6033
+        color: #FFFFFF
+        font-size: 20px
+        font-family: Raleway-Light, serif
+        text-transform: uppercase
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 15px 25px
+        transition: all ease 0.2s
+        border-radius: 2px
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        &:hover
+            box-shadow: 0 0 10px rgba(0,0,0,1)
+.about
+    background-color: #00C4C4
+    padding: 70px 0px
+    &__container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100vh
+    &__foto 
+        margin-right: 90px
+    &__text 
+    &__title 
+        font-size: 90px
+        line-height: 90px
+        color: white
+        padding-bottom: 20px
+        font-family: Raleway-Bold, serif
+    &__descr 
+        &:first-of-type
+            padding-bottom: 15px
