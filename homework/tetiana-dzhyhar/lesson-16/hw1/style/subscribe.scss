@@ -1,0 +1,62 @@
+%backgr {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+@mixin backgr ($img) {
+  background-image: $img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.subscribe {
+  width: 100vw;
+  @include backgr(url(/img/subscribe.png));
+  @extend %backgr;
+
+  &__container {
+    padding: 100px 0 100px 100px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    height: 55px;
+    margin: 0;
+  }
+
+  &__input {
+    width: 42vw;
+    height: 55px;
+    border: solid 1px #262626;
+    background-color: #ffffff;
+    opacity: 0.5;
+    padding-left: 10px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(38, 38, 38, 0.5);
+  }
+}
+
+.description__title--subscribe {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text-description--subscribe {
+  width: 550px;
+}
+
+.description__button-container--subscribe {
+  display: inline-block;
+  background-color: #96b92c;
+}

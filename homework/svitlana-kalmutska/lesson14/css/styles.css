@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(/fonts/Raleway-Light.woff2) format('woff2'),
+        url(/fonts/Raleway-Light.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(/fonts/Raleway-Bold.woff2) format('woff2'),
+        url(/fonts/Raleway-Bold.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-top: 100px;
+}
+
+.container {
+    padding: 0 165px;
+    max-width: 1500px;
+    position: relative;
+}
+
+.title {
+    font-family: 'Raleway-Bold';
+    font-style: normal;
+    line-height: 0.3;
+    letter-spacing: normal;
+}
+
+.services {
+    background-color: #70bfff;
+}
+
+.services__inner {
+    padding-left: 100px;
+    padding-top: 100px;
+    background: url(/images/services_bg.png) right no-repeat;
+
+}
+
+.row {
+    padding-left: 0;
+    padding-top: 79px;
+    padding-bottom: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row__list {
+    list-style: none;
+}
+
+.row__item {
+    width: 400px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row__item:last-child {
+    margin-bottom: 0;
+}
+
+.row__item:hover {
+    background-color: #ffe92f;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* I cant make hover, it doesn't work (( but why? */
+
+.row__item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 99px;
+    font-size: 20px;
+    font-family: 'Raleway-Bold';
+    text-align: center;
+    line-height: 1.35;
+    color: #262626;
+}
+
+.icon {
+    fill: #262626;
+    fill-rule: evenodd;
+    display: block;
+    width: 47px;
+    height: 44px;
+}
+
+/* .icon:first-child {
+    width: 47px;
+    height: 44px;
+} */
+
+li.icon:nth-child(2) {
+    width: 55px;
+    height: 49px;
+}
+
+.row__item-icon:nth-child(3) {
+    width: 54px;
+    height: 54px;
+}
+
+/* .icon:last-child {
+    width: 55px;
+    height: 55px;
+} */
+
+/* Why if last-child is not commented it makes every icon 55*55px? and other selectors doesn't work now */
+
+.row__item-icon {
+    width: 99px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #9d9d9d solid 1px;
+}
+
+.services__title {
+    padding: 0 165px;
+    max-width: 1500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.services__title-text {
+    width: 50%;
+    margin-left: auto;
+    padding-top: 290px;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 83px;
+    text-align: right;
+}

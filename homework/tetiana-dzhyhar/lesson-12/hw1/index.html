@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="contact">
+    <div class="contact__main">
+      <div class="contact__title-container">
+        <div class="contact__title">Contact</div>
+        <div class="contact__subtitle">
+          For new projects, ideas, business or anything you'd like to discuss,
+          contact with me!
+        </div>
+      </div>
+      <div class="contact__main-container">
+        <div class="form">
+          <input
+            class="form__input"
+            id="user"
+            type="text"
+            name="username"
+            placeholder="Your name..."
+            autofocus
+            required
+          />
+
+          <input
+            class="form__input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email..."
+            required
+          />
+
+          <input
+            class="form__input"
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Your phone number..."
+            required
+            pattern="\+?[0-9]{10,13}"
+          />
+          <textarea
+            class="form__message"
+            name="smm"
+            id="text"
+            cols="30"
+            rows="5"
+            maxlength="200"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+        <div class="contact__contact info">
+          <div class="info__title">
+            ADDRESS
+            <div class="info__info">123 City name, Street, City, Country</div>
+          </div>
+          <div class="info__title">
+            EMAIL
+            <div class="info__info">cahee@domain.com</div>
+          </div>
+          <div class="info__title">
+            PHONE
+            <div class="info__info">+012 345 6789</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact__footer footer">
+      <div class="footer__copyright">© 2015 Company. All right reserved.</div>
+      <div class="footer__logo">Cahee</div>
+      <div class="footer__design">
+        Made with
+        <span class="footer__design--red">love</span>
+        by Auskteez
+      </div>
+    </div>
+  </body>
+</html>
