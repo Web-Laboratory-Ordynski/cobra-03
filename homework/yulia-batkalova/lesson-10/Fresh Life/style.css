@@ -1,0 +1,111 @@
+.first-block{
+    background-image: url(../fresh_images/white.svg);
+    background-size: 100%;
+    width: 1500px;
+    height: 990px;
+    margin: 0;
+    
+   
+}
+
+.first-block-header__title{
+    padding-left: 165px;
+    padding-top: 50px;
+    width: 127px;
+    height: 52px;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+.first-block-header-menu{
+    padding-left: 779px;
+    padding-top: -50px;
+    width: 557px;
+    height: 12px;
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+
+}
+
+.first-block-header-menu__list{
+    padding-left: 10px;
+}
+
+.first-block-main{
+    padding-left: 164px;
+    padding-top: 360px;
+    width: 369px;
+    height: 236px;
+}
+
+.first-block-main__title{
+    width: 287px;
+    height: 46px;
+    font-size: 60px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.first-block-main__text{
+    margin-top: 34px;
+    height: 70px;
+    font-size: 17px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button{
+    width: 201px;
+    height: 56px;
+    font-size: 15px;
+    background-color: #FF6033;
+    color: #fff;
+}
+
+.scroll{
+   padding-top: 150px;
+    padding-left: 738px;
+    width: 24px;
+    height: 40px;
+}
+
+.second-block{
+    background-color: #00C4C5;
+    background-size: 100%;
+    background-size: 100%;
+    width: 1501px;
+    height: 701px;
+    display: flex;
+}
+
+.image-berry{
+    width: 566px;
+    height: 558px;
+    padding-top: 72px;
+    padding-left: 175px;
+}
+
+.second-block-main{
+    width: 499px;
+    height: 289px;
+    padding-top: 181px;
+    padding-right: 167px;
+    color: #fff;
+    padding-left: 90px;
+}
+
+.second-block-main__title{
+    width: 394px;
+    height: 67px;
+    font-size: 90px;
+    padding-bottom: 34px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.second-block-main__text{
+    width: 499px;
+    height: 188px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+} 
