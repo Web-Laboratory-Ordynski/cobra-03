@@ -1,0 +1,154 @@
+@import "box-sizing";
+@import "fonts";
+@import "title";
+@import "wrapper";
+@import "container";
+
+$mw:1500px;
+
+@mixin font($ff, $fs) {
+    font-family: $ff;
+    font-size: $fs;
+}
+
+.gallery {
+    background-color: #ffe92f;
+    margin: 0 auto;
+    max-width: $mw;
+    padding-bottom: 120px;
+
+    .gallery-header {
+        padding-top: 100px;
+        padding-right: 296px;
+        padding-left: 297px;
+
+        &__title {
+            padding: 0px 135px 28px;
+            font-size: 90px;
+        }
+
+        &__text {
+            display: block;
+            text-align: center;
+            @include font('Raleway-Light', 17px);
+        }
+    }
+
+    .grid-box {
+        display: grid;
+        padding-top: 46px;
+        padding-bottom: 50px;
+        grid-template-columns: 570px 170px 370px;
+        grid-template-rows: 260px 260px 400px;
+        grid-gap: 30px;
+        grid-template-areas:
+            "gallery1 gallery1 gallery2"
+            "gallery1 gallery1 gallery3"
+            "gallery4 gallery5 gallery5";
+
+        &__first {
+            grid-area: gallery1;
+            background-image: url(/images/gallery1.jpg);
+        }
+
+        &__second {
+            grid-area: gallery2;
+            background-image: url(/images/gallery2.jpg);
+
+        }
+
+        &__third {
+            grid-area: gallery3;
+            background-image: url(/images/gallery3.jpg);
+        }
+
+        &__fourth {
+            grid-area: gallery4;
+            background-image: url(/images/gallery4.jpg);
+        }
+
+        &__fifth {
+            grid-area: gallery5;
+            background-image: url(/images/gallery5.jpg);
+        }
+
+        &__first,
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth {
+            background-position: center;
+            background-size: 103%;
+            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        &__first {
+            box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+            background-size: 104%;
+        }
+    }
+
+    .gallery-button {
+        background-color: #5585a2;
+        display: block;
+        width: 200px;
+        height: 55px;
+        margin-left: 485px;
+
+        &__text {
+            text-align: center;
+            @include font('Raleway-Light', 20px);
+            color: #ffffff;
+            padding-top: 15px;
+        }
+    }
+}
+
+.subscribe {
+    background-image: url(/images/subscribe_bg.png);
+    background-position: top right;
+    background-size: cover;
+    padding-bottom: 163px;
+
+    &__title {
+        font-size: 40px;
+        color: black;
+        padding-top: 145px;
+    }
+
+    &__text {
+        @include font('Raleway-Light', 16px);
+        width: 541px;
+        padding-top: 34px;
+        line-height: 1.59;
+    }
+
+    .subscribe-box {
+        padding-top: 31px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        .input {
+            width: 570px;
+            height: 55px;
+            border: solid 1px #262626;
+            padding-left: 15px;
+        }
+    }
+
+    &__btn {
+        width: 170px;
+        height: 55px;
+        background-color: #96b92c;
+        margin-right: 405px;
+
+        &-text {
+            @include font('Raleway-Light', 20px);
+            text-align: center;
+            color: #ffffff;
+            padding-top: 15px;
+        }
+    }
+}
