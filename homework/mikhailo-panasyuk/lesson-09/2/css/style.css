@@ -1,0 +1,128 @@
+@font-face{
+    font-family:'Proxima Nova Regular';
+    src: url(/font/Proxima\ Nova\ Semibold.otf);
+}
+@font-face{
+    font-family:'Playfair Display Regular';
+    src: url(/font/PlayfairDisplay-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    transition: all ease 0.2s;
+}
+body{
+    margin: 0;
+    background-color: #464F54;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.content{
+    margin: auto;
+    background-color: #FFFFFF;
+    width: 1080px;
+}
+.container{
+    max-width: 940px;
+    margin: auto;
+    padding: 0 60px;
+    height: 100%;
+    border-left: 2px solid #E9ECED;
+}
+.content__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content__input{
+    background-color: #181818;
+    padding-left: 60px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 875px;
+}
+.input__title{
+    text-transform: uppercase;
+    color: #767676;
+    font-size: 15px;
+    font-family:'Proxima Nova Regular', serif;
+    letter-spacing: 3px;
+}
+.input{
+    border: none;
+    border-bottom: 3px solid #2F2F2F;
+    background-color: #181818;
+    color: white;
+    font-size: 48px;
+    font-family: 'Playfair Display Regular' , serif;
+    outline: none;
+    padding-bottom: 10px;
+    line-height: 30px;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+}
+.content__icon-box{
+    width: 811px;
+    height: 75px;
+    background-color: #F8BE2C;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+.opacity{
+    opacity: 0.5;
+}
+.content__icon-box img:hover, svg:hover{
+    cursor: pointer;
+    filter: invert(100);
+}
+.content__icon-box img{
+    padding-right: 25px;
+}
+.content__icon-box svg{
+    margin-right: 25px;
+}
+.content__small{
+    font-size: 20px;
+    color: #b4b4b4;
+    font-family:'Proxima Nova Regular', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 190px;
+    padding-bottom: 40px;
+}
+.content__title{
+    font-size: 78px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.content__subtitle{
+    font-size: 30px;
+    font-family: georgia,serif;
+    font-style: italic;
+    color: #8f8f8f;
+    padding-bottom: 50px;
+}
+.content__text{
+    padding-bottom: 40px;
+    font-size: 27px;
+    line-height: 40px;
+    font-family: georgia,serif;
+}
+.text__padding{
+    margin-top: 0;
+    padding-left: 40px;
+}
+
+

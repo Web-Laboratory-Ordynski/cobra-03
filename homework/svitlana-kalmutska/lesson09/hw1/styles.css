@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'lato-light-webfont';
+    src: url(/fonts/lato-light-webfont.woff2) format(woff2),
+        url(/fonts/lato-light-webfont.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url(/fonts/PlayfairDisplay-Regular.woff2) format(woff2),
+        url(/fonts/PlayfairDisplay-Regular.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* It seems that my fonts don't work and I don't know why */
+
+body {
+    background-image: url(/images/Background.jpg);
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+/* I realised that when I added a background to my body my indents in the container became not so exact */
+
+.container {
+    width: 1400px;
+    height: 940px;
+    margin-top: 140px;
+    margin-left: 123px;
+    margin-right: 138px;
+}
+
+.header {
+    width: 238px;
+    height: 34px;
+    margin-top: auto;
+    margin-right: 901px;
+    margin-bottom: 39px;
+    margin-left: 2px;
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 0.8;
+    letter-spacing: -0.21px;
+    text-align: left;
+    color: #000000;
+}
+
+.content {
+    width: 1141px;
+    height: 500px;
+    opacity: 0.7;
+    font-family: 'lato-light-webfont';
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* my first-letter isn't black :( */
+.content__img-letter {
+    float: left;
+    margin-right: 1.5em;
+}
+
+blockquote {
+    font-family: 'lato-light-webfont';
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Should I do this quote as a icon? I can't put it higher now, so I guess that my decision isn't right*/
+blockquote:before {
+    content: "“";
+    font-family: 'lato-light-webfont';
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+.button {
+    width: 264px;
+    height: 68px;
+    border: solid 2px #eaa258;
+    margin-top: 39px;
+}
+
+.button__content {
+    width: 114px;
+    height: 14px;
+    margin: 27px 75px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #eaa258;
+}
