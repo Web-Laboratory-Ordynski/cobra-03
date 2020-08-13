@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="main-part">
+        <header class="header">
+            <h1 class="header__headline">Contact</h1>
+            <p class="header__text">For new projects, ideas, business or anything <br>
+                you'd like to discuss, contact with me!</p>
+        </header>
+
+        <main class="main">
+            <div class="form">
+                <div class="form__name">
+                    <label for="username"></label>
+                    <input class="form__input" minlength="7" maxlength="15" name="username" placeholder="User name..."
+                        type="text">
+                </div>
+                <div class="form__email">
+                    <label for="email"></label>
+                    <input class="form__input" minlength="7" name="email" placeholder="Your email..." type="email">
+                </div>
+                <div class="form__phone">
+                    <label for="phone-number"></label>
+                    <input class="form__input" minlength="9" maxlength="15" name="phone-number"
+                        placeholder="Your phone number..." type="text" data-mask="000-000-00-00">
+                </div>
+                <div class="form__message">
+                    <label for="message"></label>
+                    <input class="form__input" minlength="5" maxlength="50" name="message" placeholder="Your message..."
+                        type="text">
+                </div>
+            </div>
+            <div class="contacts">
+                <span>
+                    <p><b>ADDRESS</b></p>
+                    <p>123 City name, Street, City, Country</p>
+                </span>
+                <span>
+                    <p><b>EMAIL</b></p>
+                    <p>cahee@domain.com</p>
+                </span>
+                <span>
+                    <p><b>PHONE</b></p>
+                    <p>+012 345 6789</p>
+                </span>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-menu"></div>
+        <div class="footer__about">
+            &#169; 2015 Company. All right reserved.
+        </div>
+        <div class="footer__cahee">Cahee</div>
+        <div class="footer__love">
+            Made with <span class="love">love</span> by Auskteez
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+
+</html>
