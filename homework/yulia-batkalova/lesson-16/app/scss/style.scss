@@ -35,7 +35,6 @@ li {
 .photo__border {
     max-width: 432px;
     max-height: 432px;
-    // border: 1px solid $top-color;
     background-image: linear-gradient(
             to right,
             $top-color 100px,
@@ -51,19 +50,10 @@ li {
     background-repeat: no-repeat;
     display: inline-block;
     margin-top: 37px;
-
-    // &__main {
-    //     border: 1px solid $top-color;
-    //     // padding-top: 381px;
-    //     max-width: 400px;
-    //     max-height: 390px;
-    //     margin: 20px;
-    // }
 }
 
 .photo__main {
     border: 1px solid $top-color;
-    // padding-top: 381px;
     max-width: 400px;
     max-height: 390px;
     margin: 20px;
@@ -94,9 +84,7 @@ li {
 }
 
 .about__line {
-    // background-color: $top-color;
     max-width: 416px;
-    // height: 1px;
 }
 
 .about__line--line {
