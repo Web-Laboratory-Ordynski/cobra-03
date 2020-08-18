@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+.post-order{
+    min-width: 500px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.order-formform{
+    height: 40px;
+}
+
+.req{
+    max-width: 200px;
+    height: 30px;
+    border: 2px solid #000;
+}
