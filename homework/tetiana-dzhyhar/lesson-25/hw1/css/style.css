@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Light.ttf);
+  font-weight: 300;
+}
+
+*,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Lato;
+}
+
+.container-notification {
+  background-color: #194277;
+}
+
+.notification-title {
+  font-size: 14px;
+}
+
+.notification-button {
+  font-size: 12px;
+}
+
+.container-header {
+  background: url(../img/main-bg.png) no-repeat top;
+}
+
+.header__logo {
+  height: 142px;
+  width: 142px;
+}
+
+.header__title {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 1.25px;
+}
+
+.header__subtitle {
+  font-size: 16px;
+}
+
+.header__button {
+  font-size: 16px;
+}
+
+.block__title {
+  font-size: 50px;
+  line-height: 0.9;
+}
+
+.block__text {
+  font-size: 16px;
+  line-height: 2.19;
+}
+
+.expert-in {
+  background-color: #f1f8ff;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 2.19;
+}
+
+.item-border {
+  width: 140px;
+  height: 140px;
+  /* height: 10vw;
+    width: 10vw; */
+}
+
+.item__works {
+  width: 359px;
+  height: 269px;
+}
+
+.footer {
+  background-image: linear-gradient(to top, #3695ff, #3564fc);
+}
+
+.footer__text {
+  font-size: 50px;
+  line-height: 0.9;
+}
