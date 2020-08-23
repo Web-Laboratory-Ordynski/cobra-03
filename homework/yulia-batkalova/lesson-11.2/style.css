@@ -1,0 +1,141 @@
+*{
+    background-color: #E2E7EB;
+}
+
+.main-container{
+    width: 1121px;
+    height: 1102px;
+
+}
+
+.first-container{
+    display: flex;
+    width: 1121px;
+    height: 541px;
+}
+
+.block-fantastic{
+    width: 65%;
+}
+
+.second-container{
+    display: flex;
+    width: 1121px;
+    height: 541px;
+}
+
+.block-how-to-find{
+    width: 33%;
+}
+
+.block-fantastic__image{
+    background: url(../lesson-11.2/images/Layer8.svg);
+    width: 737px;
+    height: 541px;
+    position: relative;
+}
+
+.container-text{
+    position: absolute;
+    background: none;
+    margin-top: 405px;
+    margin-left: 47px;
+}
+
+.text-date__first{
+    background: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.text-about__first{
+    background: none;
+    color: #ffffff;
+    font-size: 30px;
+    width: 413px;
+}
+
+.block-how-to-find{
+    background-color: #ffffff;
+    margin-left: 19px;
+    width: 361px;
+    height: 541px;
+}
+
+.container-text__other{
+    background: none;
+}
+
+.text-date__other{
+    background: none;
+    color: #000;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 29px;
+}
+
+.text-about__other{
+    background: none;
+    color: #000;
+    font-size: 25px;
+    width: 307px;
+    height: 78px;
+    padding-left: 28px;
+}
+
+.image-author{
+    background: none;
+    padding-top: 40px;
+    padding-left: 29px;
+}
+
+.image-author__img{
+    background: none;
+    
+}
+
+.second-container{
+    display: flex;
+    width: 1121px;
+    height: 541px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.block-the-only-guide{
+    width: 360px;
+    background-color: #ffffff;
+}
+
+.block-growth{
+    width: 360px;
+    background-color: #ffffff;
+}
+
+.block-get{
+    width: 360px;
+    background-color: #ffffff;
+}
+
+.container-text__no-date{
+    margin-top: 68px;
+}
+
+.footer{
+    padding-top: 87px;
+    text-align: center;
+}
+
+.footer-img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-text{
+    max-width: 164px;
+    max-height: 11px;
+    margin-left: 13px;
+    margin-bottom: 28px;
+}
+

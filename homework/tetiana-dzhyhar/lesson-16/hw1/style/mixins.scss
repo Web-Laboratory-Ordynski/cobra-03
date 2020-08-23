@@ -1,0 +1,42 @@
+%position-center-abs {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+%backgr {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+@mixin backgr ($img) {
+  background-image: $img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+@mixin flex ($jc, $ai, $fd, $fw) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin text ($fs, $fw, $ls) {
+  font-family: Lato;
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
+
+@mixin container-position ($pt, $pb) {
+  margin: 0 auto;
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
