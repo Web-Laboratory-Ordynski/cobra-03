@@ -1,0 +1,68 @@
+@font-face
+    font-family: 'Raleway-Light'
+    src: url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+    font-family: 'Raleway-Bold'
+    src: url(../fonts/Raleway/Raleway-Bold.ttf)
+.subscribe
+    background: url(../img/subscribe/bg@1X.png)
+    background-repeat: no-repeat
+    background-position: right
+    padding-top: 145px
+    padding-bottom: 163px 
+    &__container 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-width: 1172px
+        margin: auto
+    &__title
+        font-size: 40px
+        color: #262626
+        font-family: Raleway-Bold
+        padding-bottom: 34px
+    &__descr
+        font-size: 17px
+        color: #262626
+        font-family: Raleway-Light
+        max-width: 541px
+        padding-bottom: 30px
+    &__form
+        display: flex 
+    &__input
+        margin-right: 30px
+        border: 1px solid #262626
+        padding: 23px 0 23px 16px
+        width: 60%
+    &__email
+        width: 100%
+        &::placeholder
+            font-size: 15px
+            color: #262626
+            font-family: Raleway-Light
+    &__button
+        background-color: #96B92C
+        height: 100%
+        font-size: 20px
+        color: #FFFFFF 
+        font-family: Raleway-Light
+        padding: 0 30px
+@media screen and ( max-width: 576px  )
+    .subscribe
+        padding: 30px 15px
+        text-align: center
+        &__descr
+            color: black
+            font-weight: 700
+        &__form
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+        &__input
+            margin-right: 0
+            margin-bottom: 30px
+            background-color: white
+        &__button
+            padding: 15px 15px
+        &__button-box
+            width: 100%
