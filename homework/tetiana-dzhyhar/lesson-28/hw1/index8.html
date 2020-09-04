@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task8</title>
+  </head>
+  <body>
+    <script>
+      // Запросить у пользователя длину окружности и периметр квадрата.Определить, может ли такая окружность поместиться в указанный квадрат.
+      let circleLength = prompt("enter circle length");
+      let squarePerimetr = prompt("enter perimeter of the square");
+      if (Number(circleLength) / 4 >= Number(squarePerimetr) / Math.PI) {
+        alert("це коло поміститься в квадрат");
+      } else {
+        alert("це коло не поміститься в квадрат");
+      }
+    </script>
+  </body>
+</html>

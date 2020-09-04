@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task9</title>
+  </head>
+  <body>
+    <script>
+      // Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
+      let firstQuestion = prompt("на яку букву починається слово Едельвейс");
+      let secondQuestion = prompt("на яку букву починається слово Газель");
+      let thirdQuestion = prompt("на яку букву починається слово Мартин");
+      let score = 0;
+      if (firstQuestion.toLowerCase() == "е") {
+        score = score + 2;
+      }
+
+      if (secondQuestion.toLowerCase() == "г") {
+        score = score + 2;
+      }
+
+      if (thirdQuestion.toLowerCase() == "м") {
+        score = score + 2;
+      }
+      alert("ви набрали таку кількість балів");
+      alert(score);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task6</title>
+  </head>
+  <body>
+    <script>
+      // Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.
+      let amountOfCash = prompt("enter amount of cash in dollars");
+      if (amountOfCash > 0) {
+        let currency = prompt("enter currency: EUR, UAN or AZN");
+        if (currency.toLowerCase() == "eur") {
+          alert(amountOfCash * 0.84);
+        } else if (currency.toLowerCase() == "uan") {
+          alert(amountOfCash * 27.48);
+        } else {
+          alert(amountOfCash * 1.7);
+        }
+      } else {
+        alert("Сума готівки повинна бути більше нуля");
+      }
+
+      //       let dollarsToCurrency = function hrnToEur(amountOfCash);
+      //         function hrnToEur(cash) {
+      // let EUR = 32.71
+      //         return (cash * EUR);
+      //       }
+    </script>
+  </body>
+</html>
