@@ -1,0 +1,52 @@
+body{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: brown;
+	align-items: center;
+	justify-content: center;
+}
+.card-container {
+	margin: 10px 10px;
+}
+.card-container:hover .card {
+	transform: rotateY(180deg);
+}
+
+.card-container, .front, .back {
+	width: 160px;
+	height: 240px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+.card {
+	cursor: pointer;
+	transition: 0.4s;
+	transform-style: preserve-3d;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front img{
+	width: 100%;
+	height: 100%;
+}
+.back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    transform: rotateY(180deg);
+	background-color: white;
+	font-size: 56px;
+}
+.back-warning{
+	color: red;
+}
+button{
+	height: 40;
+	width: 100px;
+	font-size: 25px;
+	cursor: pointer;
+}
