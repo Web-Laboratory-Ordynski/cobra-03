@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task9</title>
+  </head>
+  <body>
+    <script>
+      // 4. Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.
+      let firstNumber = prompt("введіть число");
+      let secondNumber = prompt("введіть ще одне число");
+      function theBiggestDivider(firstNumber, secondNumber) {
+        if (firstNumber > secondNumber) {
+          for (let divider = secondNumber; divider >= 1; divider -= 1) {
+            if (firstNumber % divider == 0 && secondNumber % divider == 0) {
+              return divider;
+            }
+          }
+        } else if (firstNumber < secondNumber) {
+          for (let divider = firstNumber; divider >= 1; divider -= 1) {
+            if (firstNumber % divider == 0 && secondNumber % divider == 0) {
+              return divider;
+            }
+          }
+        } else {
+          return firstNumber;
+        }
+      }
+
+      alert(
+        "найбільший спільний дільник - " +
+          theBiggestDivider(firstNumber, secondNumber)
+      );
+    </script>
+  </body>
+</html>
