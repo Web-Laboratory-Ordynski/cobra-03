@@ -1,0 +1,103 @@
+@font-face{
+    font-family: 'lato-light';
+    src: url(../font/Lato-Light.ttf);
+}
+@font-face{
+    font-family: 'miso-bold';
+    src: url(../font/miso-bold.ttf);
+}
+@font-face{
+    font-family: 'miso';
+    src: url(../font/miso.otf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.content{
+    background-color: #FDDE7E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+}
+.container{
+    max-width: 1141px;
+    margin: 0 auto;
+}
+.container--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px -12px;
+}
+.content__column{
+    flex-basis:  33.333%;
+    padding: 0 12px;
+    margin: 30px 0px;
+}
+.content__column:last-child{
+    margin-right: 0;
+}
+.content__card{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 441px;
+    padding: 40px 105px;
+}
+
+.content__card--midlle{
+    height: 500px;
+    padding: 55px 105px;
+}
+.content__price{
+    font-size: 70px;
+    color: #02995B;
+    font-family: miso-bold, serif;
+    line-height: 52px;
+}
+.content__picture{
+    height: 135px;
+    width: 135px;
+    margin: auto;
+    opacity: 0.8;
+}
+.content__been{
+    padding: 72px 57px 17px 42px;
+    opacity: 0.2;
+}
+.content__picture--bronze{
+    background: url(../img/bronze.png);
+    margin-top: 23px;
+    margin-bottom: 38px;
+}
+.content__picture--gold {
+    background: url(../img/gold.png);
+    margin-top: 43px;
+    margin-bottom: 47px;
+}
+.content__picture--silver {
+    background: url(../img/silver.png);
+    margin-top: 23px;
+    margin-bottom: 38px;
+}
+.content__text{
+    max-width: 156px;
+}
+.content__title{
+    font-size: 56px;
+    font-family: miso ,serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+    line-height: 42px;
+}
+.content__subtitle{
+    font-size: 21px;
+    font-family: lato-light,serif;
+    font-weight: 700;
+    color: #333333;
+}
