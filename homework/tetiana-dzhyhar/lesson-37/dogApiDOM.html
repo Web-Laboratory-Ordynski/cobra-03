@@ -7,6 +7,7 @@
   </head>
   <body>
     <header>DOG LIST:</header>
+    <main></main>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"
       integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg=="
@@ -37,12 +38,14 @@
             if (el[0] === "Y") return true;
           });
 
+        let newOl = document.createElement("ol");
+
         for (var i = 0; i < dogsString.length; i++) {
-          console.log(dogsString[i]); // Text, DIV, Text, UL, ..., SCRIPT
-          let newLi = document.createElement("p");
-          newLi.innerText = `${i + 1}. ${dogsString[i]}`;
-          document.body.appendChild(newLi);
+          let newLi = document.createElement("li");
+          newLi.innerHTML = dogsString[i];
+          newOl.appendChild(newLi);
         }
+        document.body.appendChild(newOl);
       }
 
       superagent
