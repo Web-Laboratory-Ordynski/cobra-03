@@ -1,0 +1,227 @@
+@import "box-sizing";
+@import "title";
+@import "fonts";
+
+@mixin img-decor ($ab, $tp, $lf, $wd, $hg, $bg) {
+    position: $ab;
+    top: $tp;
+    left: $lf;
+    width: $wd;
+    height: $hg;
+    background: $bg;
+}
+
+$bgcol: #ffcc00;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    max-height: 998px;
+
+    .container {
+        padding: 112px 400px 90px 400px;
+        width: 1107px;
+
+        .header {
+            width: 440px;
+            padding-left: 329px;
+
+            &__top {
+                font-family: 'Raleway-Medium';
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: 0.36px;
+                text-align: center;
+                color: #898f8f;
+            }
+
+            &__title {
+                font-family: 'Roboto-Black';
+                padding-top: 18px;
+                line-height: 1.1;
+                letter-spacing: normal;
+                text-align: center;
+                color: $bgcol;
+            }
+
+            &__icon {
+                padding-left: 10px;
+                padding-top: 54px;
+
+                &::before,
+                &::after {
+                    content: '';
+                    width: 200px;
+                    height: 2px;
+                    background: $bgcol;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .content {
+            padding-top: 130px;
+            position: relative;
+
+            &__img {
+                padding-left: 96px;
+                position: relative;
+
+                &-decor1 {
+                    @include img-decor (absolute, -20px, 75px, 1px, 130px, $bgcol)
+                }
+
+                &-decor2 {
+                    @include img-decor (absolute, -20px, 75px, 130px, 1px, $bgcol)
+                }
+
+                &-decor3 {
+                    @include img-decor (absolute, -20px, 375px, 130px, 1px, $bgcol)
+                }
+
+                &-decor4 {
+                    @include img-decor (absolute, -20px, 505px, 1px, 130px, $bgcol)
+                }
+
+                &-decor5 {
+                    @include img-decor (absolute, 275px, 75px, 1px, 130px, $bgcol)
+                }
+
+                &-decor6 {
+                    @include img-decor (absolute, 405px, 75px, 130px, 1px, $bgcol)
+                }
+
+                &-decor7 {
+                    @include img-decor (absolute, 405px, 375px, 130px, 1px, $bgcol)
+                }
+
+                &-decor8 {
+                    @include img-decor (absolute, 275px, 505px, 1px, 130px, $bgcol)
+                }
+
+                &-angelleft {
+                    position: absolute;
+                    top: 50%;
+                    left: 50px;
+                    background: url(/img/angle-left.png) 0 0 no-repeat;
+                }
+
+                // my background doesn't work ((
+            }
+
+            &__middle-line {
+                width: 1px;
+                height: 560px;
+                background: $bgcol;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 49.75%;
+                margin-top: 30px;
+            }
+
+            &-main {
+                max-width: 1920px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 84px;
+            }
+
+            &__info {
+                width: 50%;
+                margin-left: auto;
+                padding-top: 130px;
+
+                &-header {
+                    font-family: 'Roboto-Black';
+                    font-size: 36px;
+                    color: #666666;
+                    padding-left: 88px;
+                    padding-bottom: 30px;
+                }
+
+                &-line {
+                    width: 100px;
+                    height: 1px;
+                    background: $bgcol;
+                    margin-left: 150px;
+                }
+
+                &-title {
+                    padding-top: 33px;
+                    padding-left: 100px;
+                    font-family: 'Raleway-Regular';
+                    font-size: 24px;
+                    color: #666666;
+                }
+
+                &-icons {
+                    padding-left: 141px;
+                    padding-top: 26px;
+                }
+
+                &-description {
+                    width: 416px;
+                    height: 109px;
+                    font-family: 'Raleway-Medium';
+                    font-size: 14px;
+                    color: #333333;
+                    text-align: center;
+                    line-height: 1.71;
+                    padding-bottom: 20px;
+                }
+
+                &-decor {
+                    width: 20px;
+                    height: 4px;
+                    background: $bgcol;
+                    position: relative;
+                    margin-left: 200px;
+
+                    &::before {
+                        content: '';
+                        width: 10px;
+                        height: 4px;
+                        background: $bgcol;
+                        display: inline-block;
+                        position: absolute;
+                        left: -15px;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: 10px;
+                        height: 4px;
+                        background: $bgcol;
+                        display: inline-block;
+                        position: absolute;
+                        left: 25px;
+                    }
+                }
+
+                &-btn {
+                    margin-left: 149px;
+                    margin-top: 30px;
+                    width: 120px;
+                    height: 24px;
+                    border: solid 1px $bgcol;
+
+                    .button-text {
+                        font-family: 'Roboto-Black';
+                        font-size: 14px;
+                        color: #666666;
+                        line-height: 1.71;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
