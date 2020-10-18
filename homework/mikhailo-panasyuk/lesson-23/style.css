@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal__button__close{
+    align-self: center;
+    cursor: pointer;
+}
+.modal__button__open{
+    cursor: pointer;
+    margin-top: 100px;
+}
+.modal__cross{
+    align-self: flex-end;
+    cursor: pointer;
+}
+.modal__wrapper{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    z-index: 22px;
+    align-items: center;
+    justify-content: center;
+}
+.d-none{
+    display: none;
+}
+
+.lights {
+    padding-top: 100px;
+}
+.lights__circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.lights__green {
+    background-color: green;
+}
+
+.lights__orange {
+    background-color: orange;
+}
+.lights__red {
+    background-color: red;
+}
+.lights__deactive {
+    background-color: transparent;
+}
+.lights__button{
+    cursor: pointer;
+}
