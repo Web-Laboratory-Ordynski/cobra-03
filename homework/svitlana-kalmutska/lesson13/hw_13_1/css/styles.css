@@ -1,0 +1,123 @@
+.wrapper {
+    width: 1700px;
+    height: 2424px;
+    margin: 0 auto;
+}
+
+.top-container {
+    width: 1501px;
+    height: 1412px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 360px 360px 580px;
+    grid-gap: 56px 57px;
+    grid-template-areas:
+        "boots boots boy"
+        "boots boots girl"
+        "ten place greyboy";
+}
+
+.boots {
+    grid-area: boots;
+    background-image: url(/images/boots.jpg);
+}
+
+.boy {
+    grid-area: boy;
+    background-image: url(/images/boy.jpg);
+}
+
+.girl {
+    grid-area: girl;
+    background-image: url(/images/girl.jpg);
+}
+
+.ten {
+    grid-area: ten;
+    background-image: url(/images/ten.jpg);
+}
+
+.place {
+    grid-area: place;
+    background-image: url(/images/place.jpg);
+}
+
+.greyboy {
+    grid-area: greyboy;
+    background-image: url(/images/greyboy.jpg);
+}
+
+.bottom-container {
+    width: 1700px;
+    height: 850px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "first second third fourth"
+        "fifth sixth seventh eighth";
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover,
+.fifth:hover,
+.sixth:hover,
+.seventh:hover,
+.eighth:hover {
+    filter: brightness(1);
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth {
+    filter: brightness(0.2);
+    transition: all 0.5s;
+}
+
+.first {
+    grid-area: first;
+    background-image: url(/images/1.jpg);
+}
+
+.second {
+    grid-area: second;
+    background-image: url(/images/2.jpg);
+}
+
+.third {
+    grid-area: third;
+    background-image: url(/images/3.jpg);
+}
+
+.fourth {
+    grid-area: fourth;
+    background-image: url(/images/4.jpg);
+}
+
+.fifth {
+    grid-area: fifth;
+    background-image: url(/images/5.jpg);
+}
+
+.sixth {
+    grid-area: sixth;
+    background-image: url(/images/6.jpg);
+}
+
+.seventh {
+    grid-area: seventh;
+    background-image: url(/images/7.jpg);
+}
+
+.eighth {
+    grid-area: eighth;
+    background-image: url(/images/8.jpg);
+}

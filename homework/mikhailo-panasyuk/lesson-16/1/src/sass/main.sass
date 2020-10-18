@@ -1,0 +1,176 @@
+@font-face 
+    font-family: 'Raleway'
+    src: url(../fonts/Raleway-Light.ttf)
+.team 
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 1116px
+        margin: auto
+        padding-top: 112px
+        padding-bottom: 96px 
+    &__header
+        padding-bottom: 30px 
+    &__subtitle
+        font-size: 18px
+        color: #898F8F
+        font-family: Raleway
+        padding-bottom: 18px
+        text-align: center 
+    &__title
+        text-align: center
+        font-size: 60px
+        color: #FFCC00
+        font-family: Roboto
+        font-weight: 900
+        padding-bottom: 45px
+    &__bonfire
+        display: flex
+        align-items: center
+    &__bonfire-part
+        width: 211px
+        height: 2px
+        background-color: #FFCC00
+    &__icon-bonfire
+        padding: 0 7px
+    &__slider 
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__slider-box 
+        display: flex
+        align-items: center
+        max-width: 1103px
+        margin: auto
+        padding-bottom: 40px
+    &__foto-box 
+        display: inline-block
+        width: max-content
+        position: relative
+        border: 2px solid #FFCC00 
+        transition: all .3s ease
+        &::after
+            content: ""
+            z-index: 1
+            display: block
+            position: absolute
+            background: #FFF
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transform-origin: 50% 50%
+            height: calc(100% + 4px)
+            width: 60%
+            transition: width 0.6s
+        &::before
+            content: ""
+            z-index: 1
+            display: block
+            position: absolute
+            background: #FFF
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transform-origin: 50% 50%
+            width: calc(100% + 4px)
+            height: 60%
+    &__foto img
+        border: 2px solid #FFCC00 
+        margin: 10px
+        z-index: 2
+        position: relative
+    &__arrow-left
+        color: #FFCC00 
+        font-size: 40px
+        cursor: pointer
+        padding-right: 40px
+    &__arrow-right
+        color: #FFCC00 
+        font-size: 40px
+        cursor: pointer
+        padding-left: 40px
+    &__wall
+        min-height: 600px
+        width: 2px
+        background-color: #FFCC00
+        margin: 0 50px
+    &__dots-box 
+        display: flex
+    &__dots 
+        height: 12px
+        width: 12px
+        background-color: #FFCC00
+        border: 2px solid #FFCC00
+        border-radius: 50%
+        margin-right: 8px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+    &__dots-active 
+        background: white
+.text
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title 
+        font-size: 36px
+        color: #666666
+        font-family: Roboto
+        font-weight: 900
+    &__border 
+        width: 101px
+        height: 2px
+        background-color: #FFCC00
+        margin: 33px 0
+    &__subtitle 
+        font-size: 24px
+        color: #666666
+        font-family: Raleway
+        padding-bottom: 30px
+    &__icon-box 
+        display: flex
+        padding-bottom: 32px
+    &__icon 
+        color: #CCCCCC
+        border: 2px solid #CCCCCC
+        border-radius: 50%
+        width: 31px
+        height: 31px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 3px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+    &__descr 
+        font-size: 14px
+        color: #333333
+        font-family: Raleway
+    &__border-dashed-box 
+        margin: 20px 0
+        display: flex
+    &__border-dashed-small
+        height: 4px
+        width: 11px
+        background-color: #FFCC00
+    &__border-dashed-big 
+        height: 4px
+        width: 21px
+        background-color: #FFCC00
+        margin: 0 4px
+    &__button-box 
+    &__button 
+        font-size: 14px
+        color: #666666
+        font-family: Raleway
+        font-weight: 700
+        padding: 8px 13px
+        background-color: white
+        border: 2px solid #FFCC00
+
+
+

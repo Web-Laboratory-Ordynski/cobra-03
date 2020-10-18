@@ -1,0 +1,150 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+.main-part{
+     background: url(../images/img\ \(8\).svg);
+     height: 840px;
+}
+
+.header{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.header__headline{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+}
+
+.header__text{
+    font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+}
+
+.body{
+    display: block;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+
+.form{
+    justify-content: center;
+}
+
+.form__name{
+    background-color: #00C4C5;
+    width: 501px;
+    height: 51px;
+    opacity: 0.6;
+}
+
+.form__name:hover{
+    border-left: 6px solid #355B82;
+    opacity: 0.9;
+}
+
+.form__email{
+    background-color: #00C4C5;
+    width: 501px;
+    height: 51px;
+    margin-top: 14px;
+    opacity: 0.6;
+}
+
+.form__email:hover{
+    border-left: 6px solid #355B82;
+    opacity: 0.9;
+}
+
+.form__phone{
+    background-color: #00C4C5;
+    width: 501px;
+    height: 51px;
+    margin-top: 14px;
+    opacity: 0.6;
+}
+
+.form__phone:hover{
+    border-left: 6px solid #355B82;
+    opacity: 0.9;
+}
+
+.form__message{
+    background-color: #00C4C5;
+    width: 501px;
+    height: 251px;
+    margin-top: 14px;
+    opacity: 0.6;
+}
+
+.form__message:hover{
+    border-left: 6px solid #355B82;
+    opacity: 0.9;
+}
+
+.form__input{
+    width: 501px;
+    height: 51px;
+   text-align: left;
+    display: block;
+background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 18px;
+}
+
+::placeholder{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.contacts{
+     font-family: 'Raleway', sans-serif;
+    width: 317px;
+    height: 160px;
+}
+
+.footer{
+    background-color: #262626;
+    height: 91px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__about{
+    margin-top: 37px;
+    color: #B9B9B9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.footer__cahee{
+    margin-top: 20px;
+    color: #B9B9B9;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.footer__love{
+    margin-top: 37px;
+    color: #B9B9B9;
+    margin-right: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.love{
+    color: tomato;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}

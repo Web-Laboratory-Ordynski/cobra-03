@@ -1,0 +1,166 @@
+.wrapper {
+    margin: 0 auto;
+    background: url('/images/bg_blue.png') 0 0 repeat;
+}
+
+.container {
+    width: 590px;
+    height: 770px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 11px;
+    /* grid-template-areas: */
+    /* "spades6 clubs6 hearts6 diams6 spades7 clubs7"
+        "hearts7 diams7 spades8 clubs8 hearts8 diams8"
+        "spadesJ clubsJ heartsJ diamsJ clubsQ heartsQ"
+        "diamsQ spadesQ" */
+    /* ; */
+}
+
+.card__container {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    transition: 1.2s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    width: 80px;
+    height: 110px;
+    border: #067660 solid 5px;
+    border-radius: 5px;
+    position: absolute;
+    /* top: 0;
+    left: 0;  Do I need this two lines in my code?*/
+}
+
+.card__front {
+    background-color: #309e83;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card__back {
+    background-image: url(/images/Card_back_pineapples.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__figure-top,
+.card__figure-bottom {
+    text-align: center;
+    font-weight: 800;
+}
+
+.card__figure-bottom {
+    transform: scale(-1, -1);
+}
+
+.card__suit {
+    font-size: 4em;
+}
+
+.card__suit span {
+    color: red;
+}
+
+.card__figure {
+    text-align: center;
+}
+
+/* I was so surprised when I noticed that nothing changes if all grid-areas and grid-template-areas are committed like now!!! */
+
+/* .spades__card6 {
+    grid-area: spades6;
+}
+
+.clubs__card6 {
+    grid-area: clubs6;
+}
+
+.hearts__card6 {
+    grid-area: hearts6;
+}
+
+.diams__card6 {
+    grid-area: diams6;
+}
+
+.spades__card7 {
+    grid-area: spades7;
+}
+
+.clubs__card7 {
+    grid-area: clubs7;
+}
+
+.hearts__card7 {
+    grid-area: hearts7;
+}
+
+.diams__card7 {
+    grid-area: diams7;
+}
+
+.spades__card8 {
+    grid-area: spades8;
+}
+
+.clubs__card8 {
+    grid-area: clubs8;
+}
+
+.hearts__card8 {
+    grid-area: hearts8;
+}
+
+.diams__card8 {
+    grid-area: diams8;
+}
+
+.spades__cardJ {
+    grid-area: spadesJ;
+}
+
+.clubs__cardJ {
+    grid-area: clubsJ;
+}
+
+.hearts__cardJ {
+    grid-area: heartsJ;
+}
+
+.diams__cardJ {
+    grid-area: diamsJ;
+}
+
+.clubs__cardQ {
+    grid-area: clubsQ;
+}
+
+.hearts__cardQ {
+    grid-area: heartsQ;
+}
+
+.diams__cardQ {
+    grid-area: diamsQ;
+}
+
+.spades__cardQ {
+    grid-area: spadesQ;
+} */
