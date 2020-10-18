@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+.choose{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.choose__field{
+    margin-bottom: 20px;
+}
+.choose__select{
+    font-size: 22px;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+.result__descr{
+    margin-right: 20px;
+    max-width: 400px;
+}
+.result img{
+    max-width: 300px; 
+    
+}
+.result__foto{
+    width: 300px;
+}
