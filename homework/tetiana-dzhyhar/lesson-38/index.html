@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶 DOGS API 🐶</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form name="tapeTheBreed">
+        <input name="breed" value="" placeholder="Tape the breed" />
+      </form>
+      <button id="typedInfo">Breed button</button>
+    </div>
+    <main id="cleaner" class="breed-info"></main>
+    <div class="openedList">
+      <button id="openedList">DOG LIST (hide/open):</button>
+    </div>
+    <div class="instructions">
+      <ul>
+        <li>Click the button above (DOG LIST)</li>
+        <li>Copy the breed name</li>
+        <li>Paste into the input field</li>
+        <li>Click the button (Breed button)</li>
+      </ul>
+    </div>
+    <div class="dog_list"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"
+      integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
