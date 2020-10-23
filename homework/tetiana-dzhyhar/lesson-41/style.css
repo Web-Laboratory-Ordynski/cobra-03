@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px;
+}
+
+.photo {
+  display: block;
+  margin: 5px auto;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+}
+
+.photoDog {
+  margin: 20px auto;
+  height: 250px;
+  padding: 3px;
+}
+
+.photo-cat {
+  width: auto;
+  height: 200px;
+}
+

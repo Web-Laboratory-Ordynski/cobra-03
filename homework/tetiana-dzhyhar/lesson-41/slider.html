@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶 DOGS API 🐶</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"
+      integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="slider.js"></script>
+    <div class="form">
+      <button id="typedInfo" class="form">Click me!</button>
+    </div>
+    <div class="your-class">
+      <img
+        class="photo photo-cat"
+        src="https://ichef.bbci.co.uk/news/976/cpsprodpb/41CF/production/_109474861_angrycat-index-getty3-3.jpg"
+        alt="angry cat"
+      />
+      <img
+        class="photo photo-cat"
+        src="https://kinpet.ru/upload/medialibrary/3ac/napadaet8.jpg"
+        alt="angry cat"
+      />
+      <img
+        class="photo photo-cat"
+        src="https://usatiki.ru/wp-content/uploads/2017/05/pochemu-koty-i-koshki-brosayutsya-i-kusayut-za-nogi.jpg"
+        alt="angry cat"
+      />
+      <img
+        class="photo photo-cat"
+        src="https://kiev.sq.com.ua/img/news/2020/06/09/kot.jpg"
+        alt="angry cat"
+      />
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".your-class").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          centerMode: true,
+          variableWidth: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
+
+    <div id="dog-slider" class="dog-slider"></div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".dog-slider").slick({
+          // dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToScroll: 3,
+          variableWidth: true,
+          adaptiveHeight: true,
+        });
+
+        // $(".your-class").slick("refresh");
+      });
+    </script>
+
+    <!-- <script>
+      $(function () {
+        console.log("ready!");
+      });
+    </script> -->
+  </body>
+</html>
