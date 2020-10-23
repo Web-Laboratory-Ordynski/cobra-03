@@ -8,10 +8,10 @@ img {
   height: auto;
 }
 
-.form {
+.button {
   display: flex;
   justify-content: center;
-  margin: 20px auto 20px;
+  margin: 5px auto 5px;
 }
 
 .photo {
@@ -25,7 +25,7 @@ img {
 .photoDog {
   margin: 20px auto;
   height: 250px;
-  padding: 3px;
+  padding: 10px;
 }
 
 .photo-cat {
