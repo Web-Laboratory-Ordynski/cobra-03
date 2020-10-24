@@ -1,35 +1,58 @@
-let dogPromise = superagent.get("https://api.thedogapi.com/v1/breeds");
-dogPromise.then(function(res) {
+console.log('1');
 
-  const dogsString = res.body.map((dog) => dog.id);
-  
-  let divSlider = document.querySelector(".dog-slider");
+$(document).ready(function () { 
+  $(".cat-slider").slick({ 
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  }); // 1
 
-  function startThePhotoBoom() {
-    dogsString.forEach(elem => {
-      superagent
-              .get('https://api.thedogapi.com/v1/images/search?breed_id=' + elem)
-              .then(function(res) {
-                let img = document.createElement('img');
-                    img.src = res.body[0].url;
-                    img.classList.add("photoDog")
-                    divSlider.appendChild(img);
-                    $('#dog-slider').slick("refresh")
-              });
-    })  
-  }
+  $(".dog-slider").slick({ 
+    // dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToScroll: 3,
+    variableWidth: true,
+    adaptiveHeight: true,
+  }); // 2
+  // --------
+  let dogPromise = superagent.get("https://api.thedogapi.com/v1/breeds"); // 3
+  dogPromise.then(function (res) { // 4
+    const dogsId = res.body.map((dog) => dog.id);
+    let divSlider = document.querySelector(".dog-slider");
 
-  typedInfo.addEventListener("click", startThePhotoBoom);
-  // let starter = startThePhotoBoom()
-  
-})
-.catch(err => console.log('ERROR'))
+    function startThePhotoBoom() {
+      const promisesArray = dogsId.map(id => {
+        return superagent
+          .get('https://api.thedogapi.com/v1/images/search?breed_id=' + id)
+      })
+      Promise.all(promisesArray).then((resultsArray) => {
+        resultsArray.forEach((res) => {
+          let img = document.createElement('img');
+          img.src = res.body[0].url;
+          img.classList.add("photoDog")
+          divSlider.appendChild(img);
+        })
 
-$(function () {
-  console.log("ready!");
+        $('#dog-slider').slick("refresh");
+      })
+
+    }
+
+    $("#typedInfo").click(startThePhotoBoom);
+  })
+  .catch(err => console.log('ERROR'))
+  // --------
 });
 
+console.log('2');
 
 
-      
-    
+// $(function () {
+//   console.log("ready!");
+// });
