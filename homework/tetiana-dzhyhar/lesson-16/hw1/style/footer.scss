@@ -1,0 +1,164 @@
+input,
+textarea {
+  padding: 0;
+  border: none;
+}
+
+::placeholder {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+.contact {
+  width: 100vw;
+  margin: 0 auto;
+
+  &__container {
+    width: 100%;
+    height: 130vh;
+    background: no-repeat url(/img/contact.png);
+    background-size: cover;
+  }
+
+  &__description {
+    margin: 0 auto;
+  }
+
+  &__container {
+    padding: 50px 5vw 50px 5vw;
+  }
+
+  &__footer {
+    width: 100%;
+    height: 90px;
+    background-color: #262626;
+  }
+}
+
+.description {
+  &__title--contact {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__container-text--contact {
+    width: 350px;
+  }
+}
+
+.text-description--contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__form-container {
+  padding: 0 23.2% 120px 14%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.form {
+  width: 30vw;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    background-color: #00c4c4;
+    opacity: 0.5;
+
+    &:focus {
+      border-left: 5px solid #355b82;
+      opacity: 1;
+      outline: none;
+      color: white;
+    }
+  }
+
+  &__message {
+    width: 100%;
+    height: 250px;
+    background-color: #00c4c4;
+    opacity: 0.5;
+  }
+}
+
+.contact-info {
+  &__title {
+    width: 21vw;
+    height: 60px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    color: #262626;
+  }
+
+  &__info {
+    width: 350px;
+    font-size: 21px;
+    font-weight: 300;
+  }
+
+}
+
+.footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  &__copyright {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b9b9b9;
+  }
+
+  &__logo {
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: right;
+    color: #b9b9b9;
+  }
+
+  &__design {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b9b9b9;
+
+    &--red {
+      font-weight: bold;
+      color: #ff2b58;
+    }
+  }
+}

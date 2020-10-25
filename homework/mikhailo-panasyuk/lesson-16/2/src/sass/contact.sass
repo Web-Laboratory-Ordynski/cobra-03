@@ -1,0 +1,114 @@
+@font-face
+    font-family: 'Raleway-Light'
+    src: url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+    font-family: 'Raleway-Bold'
+    src: url(../fonts/Raleway/Raleway-Bold.ttf)
+.footer
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    justify-content: space-between
+    &__wrapper
+        background-image: url(../img/contact/bg.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: 100%
+        flex: 1 1 
+    &__container
+        display: flex
+        flex-direction: column
+        max-width: 980px
+        margin: auto
+    &__container--copyright
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    &__text
+        text-align: center
+        margin-top: 101px
+        margin-bottom: 45px
+        color: #262626
+    &__title 
+        font-size: 90px
+        font-family: Raleway-Bold, serif
+        line-height: 65px
+    &__title-position
+        margin-bottom: 48px
+    &__subtitle 
+        font-size: 17px
+        font-family: Raleway-Light, serif
+        max-width: 350px
+        margin: auto
+    &__content 
+        display: flex
+        padding-bottom: 119px
+        justify-content: space-between
+        flex-wrap: wrap
+    &__form 
+        display: flex
+        flex-direction: column
+        flex-basis: 51%
+    &__input 
+        background-color: #00C4C4
+        outline: none
+        border: none
+        color: white
+        font-family: Raleway-Bold, serif
+        font-size: 15px
+        line-height: 51px
+        padding: 0px 21px
+        border-left: 6px solid transparent
+        margin-bottom: 14px
+        &::placeholder
+            color: white
+        &:focus
+            border-left: 6px solid #355B82
+    &__textarea 
+        background-color: #00C4C4
+        outline: none
+        border: none
+        color: white
+        font-family: Raleway-Bold, serif
+        font-size: 15px
+        padding: 0px 21px
+        resize: none
+        border-left: 6px solid transparent
+        padding-top: 19px
+        &::placeholder
+            color: white
+        &:focus
+            border-left: 6px solid #355B82
+    &__contacts 
+        color: #262626
+        text-decoration: none
+        font-size: 17px
+        font-family: Raleway-Light, serif
+    &__adress 
+        padding-bottom: 10px
+    &__important 
+        display: block
+        font-family: Raleway-Bold, serif
+    &__email 
+        padding-bottom: 10px
+    &__email-a
+        color: #262626
+        text-decoration: none
+    &__phone-a
+        color: #262626
+        text-decoration: none
+    &__copyright 
+        background-color: #262626
+        display: flex
+        padding: 33px 0px
+    &__rights 
+        font-size: 16px
+        color: #B9B9B9
+        font-family: Raleway-Light, serif
+    &__author 
+        font-size: 15px
+        color: #B9B9B9
+        font-family: Raleway-Light, serif
+    &__love 
+        color: #A8263A

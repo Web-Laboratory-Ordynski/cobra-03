@@ -1,0 +1,109 @@
+.blog
+    background-color: #B07CF7
+    margin: 0
+    &__container
+        max-width: 1171px
+        margin: auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        min-height: 100vh
+        align-items: center
+    &__title
+        margin-bottom: 30px
+    &__main-text
+        margin: 0
+        font-size: 90px
+        color: white
+        font-family: 'Raleway', sans-serif
+        font-weight: 700
+    &__descr
+        font-family: 'Raleway', sans-serif
+        font-size: 17px
+        color: white
+        margin-bottom: 46px
+        max-width: 563px
+        text-align: center
+        font-weight: 300
+        line-height: 24px
+    &__content
+        margin-bottom: 49px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 372px
+        height: 312px
+        box-shadow: inset 3px -72px 43px -11px rgba(0,0,0,0.8)
+        transition: all ease 0.2s
+        &:hover
+            cursor: pointer
+            transform: scale(1.1)
+    &__apple
+        background-image: url(../img/blog/1.png)
+        background-size: cover
+
+    &__been
+        background-image: url(../img/blog/2.png)
+        background-position: 0px -160px
+    &__strawberry
+        background-image: url(../img/blog/3.png)
+        background-size: cover
+    &__shadow
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        margin-right: 26px
+    &__shadow:nth-child(3)
+        margin-right: 0
+    &__date
+        background-color: rgba(72,65,66, 0.5)
+        width: max-content
+        text-align: center
+        padding: 5px 12px
+        border-radius: 5px
+        margin-top: 30px
+        margin-left: 30px
+    &__day
+        color: white
+        font-size: 32px
+        font-family: 'Raleway', sans-serif
+        font-weight: 700
+    &__month
+        color: white
+        font-size: 21px
+        font-family: 'Raleway', sans-serif
+        font-weight: 700
+    &__text
+        color: white
+        margin-left: 20px
+        margin-bottom: 23px    
+    &__text-top
+        font-size: 20px
+        margin-bottom: 25px
+        max-width: 300px
+    &__text-bot
+        opacity: 0.8
+    &__button
+        background-color: #F72B3B
+        border: none
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        font-family: 'Raleway', sans-serif
+        font-size: 20px
+        color: white
+        font-weight: 300
+        padding: 20px 44px
+        cursor: pointer
+        transition: all ease 0.2s
+        &:hover
+            transform: scale(1.1)
+            color: yellow
+@media (max-width: 800px)
+    .item__shadow
+        margin-right: 0
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0
+    
+
