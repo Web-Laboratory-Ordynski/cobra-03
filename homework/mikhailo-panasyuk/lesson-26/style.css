@@ -1,0 +1,94 @@
+.search {
+    padding-bottom: 30px;
+}
+.search__container {
+    display: flex;
+    max-width: 1124px;
+    margin: auto;
+    justify-content: center; 
+}
+.search__form {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+.search__input-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%
+}
+.search__input {
+    width:100%;
+    padding: 15px 5px;
+}
+.search__title {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.search__line {
+    height: 2px;
+    background-color: black;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.search__button-box {
+    padding-bottom: 30px;
+}
+.search__button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.search__subtitle {
+    font-size: 35px;
+}
+.search__history {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.history__title {
+    font-size: 24px;
+}
+.history__list-box {
+    border: 2px solid grey;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.history__list li{
+    cursor: pointer;
+    color: blue;
+}
+.dog__choose img {
+    max-width: 300px;
+}
+.history__button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.history__clear {
+    cursor: pointer;
+}
+.dog__choose p {
+    display: flex !important;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.dog__choose p img{
+    margin-left: 30px;
+}
+.map__container{
+    max-width: 1124px;
+    margin: auto;
+}
