@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+.main{
+    background-color: #FDDE7D;
+    display: flex;
+
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.block{
+    width: 360px;
+    height: 441px;
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+.block:hover{
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    transition: All 0.9s ease;
+}
+
+.block__image-price{
+    text-align: center;
+}
+
+.block__image-price-img{
+    width: 52px;
+    height: 53px;
+    margin-top: 42px;
+}
+
+.third-block__image-price-img{
+    width: 91px;
+    height: 53px;
+    margin-top: 42px;
+}
+
+.block__image-smoke{
+    text-align: center;
+}
+
+.block__image-smoke-img{
+    
+    width: 46px;
+    height: 49px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.first-block__image-cup{
+    background: url(../lesson-11.1/images/cup.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 135px;
+    height: 77px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.second-block__image-cup{
+    background: url(../lesson-11.1/images/cup\(1\).svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 135px;
+    height: 77px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.third-block__image-cup{
+    background: url(../lesson-11.1/images/cup\(2\).svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 135px;
+    height: 77px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.block__image-bean-img{
+    width: 36px;
+    height: 45px;
+    margin-left: 34px;
+    margin-top: 15px;
+    opacity: 0.30;
+}
+
+.block__text{
+    text-align: center;
+    width: 156px;
+    height: 115px;
+    margin-left: 105px;
+    margin-top: 38px;
+}
+
+.block__text-main{
+    font-size: 46px;
+}
+
+.block__text-secondary{
+    font-size: 19px;
+}
+
