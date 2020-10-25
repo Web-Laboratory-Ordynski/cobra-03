@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+    border: 2px solid #998442;
+}
+
+
+img:hover {
+    filter: brightness(100%);
+}
+
+h3,
+h5 {
+    margin-bottom: 15px;
+}
+
+.container {
+    
+    font-family: 'Montserrat', sans-serif;
+    padding: 1% 10%;
+    background-color: #FFECD4;
+}
+
+.content {
+    max-width: 1200px;
+    padding: 2% 5%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.main-breeds__list {
+    width: 100%;
+    padding: 10px;
+    
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.list__container {
+    width: 100%;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    padding-left: 10px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #998442;
+}
+
+.search__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input {
+    width: 70%;
+    padding: 5px 0;
+    
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form-btn {
+    width: 25%;
+    padding: 5px 0;
+    background-color: #95CCC0;
+    cursor: pointer;
+    letter-spacing: .1cm;
+    border-radius: 20px;
+    color: cornsilk;
+}
+
+.form-btn:hover {
+    width: 26%;
+    background-color: #63ae9f;
+}
+
+
+
+.dogs__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.info__name {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #998442;
+}
+
+.info__image {
+    width: 33%;
+    height: 33%;
+    flex: 0 0 50px;  
+}
+
+img {   
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    filter: brightness(75%);
+}
+
+.info__text {
+    text-align: center;
+    margin: 2% 0;
+}
+
+.js-spinner{
+    display: none;
+}

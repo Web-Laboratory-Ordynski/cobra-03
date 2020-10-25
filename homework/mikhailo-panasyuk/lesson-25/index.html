@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOG BREEDS INFO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinner.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="dogs__main-breeds content">
+        <div class="main-breeds__header">
+          <h1 class="header">YOUR DOG`s BREED SEARCH</h1>
+        </div>
+        <h5>CHOOSE BREED</h5>
+        <div class="main-breeds__list" id="dog__list">
+          <!-- elements from server -->
+        </div>
+      </div>
+
+      <div class="dogs__search content">
+        <h3 class="search__title">YOU LOOK FOR...</h3>
+        <div class="search__form">
+          <input
+            class="form-input"
+            id="js-input-search"
+            type="text"
+            placeholder="Write down a breed name you interested in..."
+          />
+          <button class="form-btn" id="js-btn-search">SEARCH</button>
+        </div>
+      </div>
+
+      <div class="loader js-spinner" id="js-spinner-id">Loading...</div>
+
+      <div class="dogs__about content" id="js-display-none">
+        <h3 class="search__title">THIS IS WHAT YOU LOOKED FOR:</h3>
+        <div class="dogs__info" id='card-container'>
+          
+        </div>
+      </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"
+      integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="dogApiUtils.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
